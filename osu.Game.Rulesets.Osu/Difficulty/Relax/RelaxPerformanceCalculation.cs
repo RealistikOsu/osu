@@ -6,13 +6,13 @@ using osu.Game.Rulesets.Osu.Mods;
 using osu.Game.Rulesets.Scoring;
 using osu.Game.Scoring;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax
 {
     /// <summary>
-    /// 2019 relax pp. Unjudged objects count as 300s, as in the Rust calc; non-finite values (which the Rust calc can produce on degenerate input) become 0.
+    /// Relax pp. Unjudged objects count as 300s, as in the Rust calc; non-finite values (which the Rust calc can produce on degenerate input) become 0.
     /// For non-classic scores, sliders without a SliderTailHit count as dropped, so failed plays should be scored against attributes of the passed objects.
     /// </summary>
-    public class Relax2019PerformanceCalculation
+    public class RelaxPerformanceCalculation
     {
         private const float slider_nerf_max_strength = 0.7f;
         private const float slider_nerf_exponent = 1;
@@ -22,7 +22,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
         private const float ez_low_ar_full_length = 1000;
         private const float ez_aim_multiplier = 1.10f;
 
-        private readonly OsuRelax2019DifficultyAttributes attributes;
+        private readonly OsuRelaxDifficultyAttributes attributes;
         private readonly IReadOnlyList<Mod> mods;
 
         private readonly int objectCount;
@@ -37,7 +37,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
         private readonly float totalHits;
         private readonly float overallDifficulty;
 
-        public Relax2019PerformanceCalculation(ScoreInfo score, OsuRelax2019DifficultyAttributes attributes)
+        public RelaxPerformanceCalculation(ScoreInfo score, OsuRelaxDifficultyAttributes attributes)
         {
             this.attributes = attributes;
             mods = score.Mods;

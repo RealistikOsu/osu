@@ -9,16 +9,16 @@ using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
 using osu.Game.Rulesets.Osu.Difficulty;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019;
+using osu.Game.Rulesets.Osu.Difficulty.Relax;
 using osu.Game.Rulesets.Osu.Mods;
 using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Tests.Beatmaps;
 using osuTK;
 
-namespace osu.Game.Rulesets.Osu.Tests.Relax2019
+namespace osu.Game.Rulesets.Osu.Tests.Relax
 {
     [TestFixture]
-    public class Relax2019DifficultyTest : DifficultyCalculatorTest
+    public class RelaxDifficultyTest : DifficultyCalculatorTest
     {
         protected override string ResourceAssembly => "osu.Game.Rulesets.Osu.Tests";
 
@@ -50,7 +50,7 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
         {
             var calc = CreateDifficultyCalculator(GetBeatmap(name));
 
-            Assert.That(calc.Calculate(new Mod[] { new OsuModRelax() }), Is.TypeOf<OsuRelax2019DifficultyAttributes>());
+            Assert.That(calc.Calculate(new Mod[] { new OsuModRelax() }), Is.TypeOf<OsuRelaxDifficultyAttributes>());
             Assert.That(calc.Calculate(), Is.TypeOf<OsuDifficultyAttributes>());
         }
 
@@ -100,12 +100,12 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
         public void TestDatabaseRoundTrip()
         {
             var calc = CreateDifficultyCalculator(GetBeatmap("diffcalc-test"));
-            var attributes = (OsuRelax2019DifficultyAttributes)calc.Calculate(new Mod[] { new OsuModRelax(), new OsuModHidden(), new OsuModHardRock() });
+            var attributes = (OsuRelaxDifficultyAttributes)calc.Calculate(new Mod[] { new OsuModRelax(), new OsuModHidden(), new OsuModHardRock() });
 
             var values = attributes.ToDatabaseAttributes().ToDictionary(a => a.attributeId, a => Convert.ToDouble(a.value));
             var onlineInfo = new APIBeatmap { CircleCount = attributes.HitCircleCount, SliderCount = attributes.SliderCount, SpinnerCount = attributes.SpinnerCount };
 
-            var restored = new OsuRelax2019DifficultyAttributes { Mods = attributes.Mods };
+            var restored = new OsuRelaxDifficultyAttributes { Mods = attributes.Mods };
             restored.FromDatabaseAttributes(values, onlineInfo);
 
             Assert.That(restored, Is.EqualTo(attributes).UsingPropertiesComparer());
@@ -126,7 +126,7 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
             var adjust = new OsuModDifficultyAdjust();
             adjust.ApproachRate.Value = 10;
 
-            var attributes = (OsuRelax2019DifficultyAttributes)calc.Calculate(new Mod[] { new OsuModRelax(), adjust });
+            var attributes = (OsuRelaxDifficultyAttributes)calc.Calculate(new Mod[] { new OsuModRelax(), adjust });
 
             Assert.That(attributes.ApproachRate, Is.EqualTo(10).Within(1e-6));
             Assert.That(attributes.EffectiveApproachRate, Is.EqualTo(10).Within(1e-4));
@@ -139,7 +139,7 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
             beatmap.HitObjects.AddRange(hitObjects);
 
             var calc = CreateDifficultyCalculator(new TestWorkingBeatmap(beatmap));
-            var attributes = (OsuRelax2019DifficultyAttributes)calc.Calculate(new Mod[] { new OsuModRelax(), new OsuModHidden() });
+            var attributes = (OsuRelaxDifficultyAttributes)calc.Calculate(new Mod[] { new OsuModRelax(), new OsuModHidden() });
 
             foreach (double value in new[]
                      {

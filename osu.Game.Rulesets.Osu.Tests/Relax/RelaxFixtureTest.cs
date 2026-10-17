@@ -9,19 +9,19 @@ using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Osu.Difficulty;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019;
+using osu.Game.Rulesets.Osu.Difficulty.Relax;
 using osu.Game.Rulesets.Osu.Mods;
 using osu.Game.Rulesets.Scoring;
 using osu.Game.Scoring;
 using osu.Game.Tests.Beatmaps;
 
-namespace osu.Game.Rulesets.Osu.Tests.Relax2019
+namespace osu.Game.Rulesets.Osu.Tests.Relax
 {
     /// <summary>
     /// Values dumped from the Rust osu_2019 calc (~/rosu-pp-rs) for the test beatmaps.
     /// </summary>
     [TestFixture]
-    public class Relax2019FixtureTest : DifficultyCalculatorTest
+    public class RelaxFixtureTest : DifficultyCalculatorTest
     {
         private const double relative_tolerance = 1e-4;
 
@@ -31,7 +31,7 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
         {
             var assembly = Assembly.GetExecutingAssembly();
 
-            using var stream = assembly.GetManifestResourceStream("osu.Game.Rulesets.Osu.Tests.Resources.Testing.Relax2019.fixtures.json")!;
+            using var stream = assembly.GetManifestResourceStream("osu.Game.Rulesets.Osu.Tests.Resources.Testing.Relax.fixtures.json")!;
             using var reader = new StreamReader(stream);
 
             foreach (var fixture in JsonConvert.DeserializeObject<Fixture[]>(reader.ReadToEnd())!)
@@ -104,7 +104,7 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
             }
         }
 
-        private (IWorkingBeatmap beatmap, OsuRelax2019DifficultyAttributes attributes) calculate(Fixture fixture)
+        private (IWorkingBeatmap beatmap, OsuRelaxDifficultyAttributes attributes) calculate(Fixture fixture)
         {
             var beatmap = GetBeatmap(fixture.Map);
 
@@ -116,8 +116,8 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
 
             var attributes = CreateDifficultyCalculator(beatmap).Calculate(DifficultyMods(fixture));
 
-            Assert.That(attributes, Is.TypeOf<OsuRelax2019DifficultyAttributes>());
-            return (beatmap, (OsuRelax2019DifficultyAttributes)attributes);
+            Assert.That(attributes, Is.TypeOf<OsuRelaxDifficultyAttributes>());
+            return (beatmap, (OsuRelaxDifficultyAttributes)attributes);
         }
 
         public static Mod[] DifficultyMods(Fixture fixture)

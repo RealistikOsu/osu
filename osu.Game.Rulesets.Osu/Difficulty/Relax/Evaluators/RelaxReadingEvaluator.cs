@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills;
+using osu.Game.Rulesets.Osu.Difficulty.Relax.Skills;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax.Evaluators
 {
     /// <summary>
-    /// kwotaq's reading evaluator as used by the 2019 calc: note density, hidden, preempt and constant angle nerf.
+    /// kwotaq's reading evaluator as used by the relax calc: note density, hidden, preempt and constant angle nerf.
     /// </summary>
-    public static class Relax2019ReadingEvaluator
+    public static class RelaxReadingEvaluator
     {
         public const float READING_WINDOW_SIZE = 3000;
 
@@ -23,7 +23,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
         private const float maximum_angle_relevancy_time = 200;
         private const float hidden_fade_out_duration_multiplier = 0.3f;
 
-        public static float EvaluateDifficultyOf(IReadOnlyList<Relax2019ReadingObject> objects, int index, Relax2019ReadingParameters parameters)
+        public static float EvaluateDifficultyOf(IReadOnlyList<RelaxReadingObject> objects, int index, RelaxReadingParameters parameters)
         {
             if (index == 0)
                 return 0;
@@ -35,7 +35,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             float pastInfluence = getPastObjectDifficultyInfluence(objects, index, parameters);
             float constantAngleNerf = getConstantAngleNerfFactor(objects, index);
 
-            Relax2019ReadingObject? next = index + 1 < objects.Count ? objects[index + 1] : null;
+            RelaxReadingObject? next = index + 1 < objects.Count ? objects[index + 1] : null;
 
             float densityDifficulty = calculateDensityDifficulty(next, velocity, constantAngleNerf, pastInfluence, currentVisibleDensity);
 
@@ -49,12 +49,12 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             return MathF.Pow(MathF.Pow(preemptDifficulty, p) + MathF.Pow(hiddenDifficulty, p) + MathF.Pow(densityDifficulty, p), 1 / p);
         }
 
-        private static float calculateDensityDifficulty(Relax2019ReadingObject? next, float velocity, float constantAngleNerf, float pastInfluence, float currentVisibleDensity)
+        private static float calculateDensityDifficulty(RelaxReadingObject? next, float velocity, float constantAngleNerf, float pastInfluence, float currentVisibleDensity)
         {
             float futureInfluence = MathF.Sqrt(currentVisibleDensity);
 
-            if (next is Relax2019ReadingObject nextObject)
-                futureInfluence *= Relax2019Math.Smootherstep(nextObject.JumpDistance, 15, distance_influence_threshold);
+            if (next is RelaxReadingObject nextObject)
+                futureInfluence *= RelaxMath.Smootherstep(nextObject.JumpDistance, 15, distance_influence_threshold);
 
             float densityDifficulty = MathF.Pow(pastInfluence + futureInfluence, 1.7f) * 0.4f * constantAngleNerf * velocity;
 
@@ -72,7 +72,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             return preemptDifficulty * constantAngleNerf * velocity;
         }
 
-        private static float calculateHiddenDifficulty(IReadOnlyList<Relax2019ReadingObject> objects, int index, Relax2019ReadingParameters parameters, float pastInfluence,
+        private static float calculateHiddenDifficulty(IReadOnlyList<RelaxReadingObject> objects, int index, RelaxReadingParameters parameters, float pastInfluence,
                                                        float currentVisibleDensity, float velocity, float constantAngleNerf)
         {
             float timeSpentInvisible = (parameters.HiddenFadeInRaw + parameters.TimePreemptRaw * hidden_fade_out_duration_multiplier) / parameters.ClockRate;
@@ -98,7 +98,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             return hiddenDifficulty;
         }
 
-        private static float getPastObjectDifficultyInfluence(IReadOnlyList<Relax2019ReadingObject> objects, int index, Relax2019ReadingParameters parameters)
+        private static float getPastObjectDifficultyInfluence(IReadOnlyList<RelaxReadingObject> objects, int index, RelaxReadingParameters parameters)
         {
             var current = objects[index];
             float influence = 0;
@@ -115,7 +115,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
                     break;
 
                 float loopDifficulty = opacityAt(current.Time, loopObject.Time, parameters, false);
-                float distanceFactor = Relax2019Math.Smootherstep(loopObject.JumpDistance, 15, distance_influence_threshold);
+                float distanceFactor = RelaxMath.Smootherstep(loopObject.JumpDistance, 15, distance_influence_threshold);
                 float timeNerf = getTimeNerfFactor(timeGap);
 
                 influence += loopDifficulty * distanceFactor * timeNerf;
@@ -124,7 +124,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             return influence;
         }
 
-        private static float retrieveCurrentVisibleObjectDensity(IReadOnlyList<Relax2019ReadingObject> objects, int index, Relax2019ReadingParameters parameters)
+        private static float retrieveCurrentVisibleObjectDensity(IReadOnlyList<RelaxReadingObject> objects, int index, RelaxReadingParameters parameters)
         {
             var current = objects[index];
             float density = 0;
@@ -146,7 +146,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             return density;
         }
 
-        private static float getConstantAngleNerfFactor(IReadOnlyList<Relax2019ReadingObject> objects, int index)
+        private static float getConstantAngleNerfFactor(IReadOnlyList<RelaxReadingObject> objects, int index)
         {
             var current = objects[index];
             float constantAngleCount = 0;
@@ -165,9 +165,9 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
                 if (current.Angle is float currentAngle && loopObject.Angle is float loopAngle)
                 {
                     float angleDifference = MathF.Abs(currentAngle - loopAngle);
-                    float stackFactor = Relax2019Math.Smootherstep(loopObject.JumpDistance, 0, normalised_radius);
+                    float stackFactor = RelaxMath.Smootherstep(loopObject.JumpDistance, 0, normalised_radius);
 
-                    float clampedAngle = MathF.Min(angleDifference * stackFactor, Relax2019Math.Radians(30));
+                    float clampedAngle = MathF.Min(angleDifference * stackFactor, RelaxMath.Radians(30));
                     constantAngleCount += MathF.Cos(3 * clampedAngle) * longIntervalFactor;
                 }
 
@@ -178,7 +178,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             return Math.Clamp(2 / constantAngleCount, 0.2f, 1);
         }
 
-        private static float opacityAt(float objectTime, float queryTime, Relax2019ReadingParameters parameters, bool hidden)
+        private static float opacityAt(float objectTime, float queryTime, RelaxReadingParameters parameters, bool hidden)
         {
             float fadeInStart = objectTime - parameters.TimePreemptRaw;
             float fadeInDuration = parameters.TimeFadeInRaw;

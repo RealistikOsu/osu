@@ -5,17 +5,17 @@ using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Difficulty.Skills;
 using osu.Game.Rulesets.Mods;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills;
+using osu.Game.Rulesets.Osu.Difficulty.Relax.Skills;
 using osu.Game.Rulesets.Osu.Mods;
 using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Utils;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax
 {
     /// <summary>
-    /// The RealistikOsu relax calc (osu_2019), run through <see cref="OsuDifficultyCalculator"/> when relax is enabled.
+    /// The RealistikOsu relax calc, ported from akatsuki-pp's osu_2019, run through <see cref="OsuDifficultyCalculator"/> when relax is enabled.
     /// </summary>
-    public static class Relax2019DifficultyCalculation
+    public static class RelaxDifficultyCalculation
     {
         private const float object_radius = 64;
         private const float normalised_radius = 52;
@@ -47,12 +47,12 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
 
             bool hardRock = mods.Any(m => m is OsuModHardRock);
 
-            var relaxObjects = beatmap.HitObjects.Cast<OsuHitObject>().Select(h => new Relax2019Object(h, radius, scalingFactor, hardRock)).ToArray();
+            var relaxObjects = beatmap.HitObjects.Cast<OsuHitObject>().Select(h => new RelaxObject(h, radius, scalingFactor, hardRock)).ToArray();
             float firstObjectTime = relaxObjects[0].Time;
 
             for (int i = 1; i < relaxObjects.Length; i++)
             {
-                objects.Add(new Relax2019DifficultyHitObject(beatmap.HitObjects[i], beatmap.HitObjects[i - 1], relaxObjects[i], relaxObjects[i - 1], i > 1 ? relaxObjects[i - 2] : null,
+                objects.Add(new RelaxDifficultyHitObject(beatmap.HitObjects[i], beatmap.HitObjects[i - 1], relaxObjects[i], relaxObjects[i - 1], i > 1 ? relaxObjects[i - 2] : null,
                     firstObjectTime, scalingFactor, clockRate, objects, objects.Count));
             }
 
@@ -61,17 +61,17 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
 
         public static Skill[] CreateSkills(IBeatmap beatmap, Mod[] mods) => new Skill[]
         {
-            new Relax2019Aim(mods, true),
-            new Relax2019Aim(mods, false),
-            new Relax2019Speed(mods),
-            new Relax2019Reading(mods, Relax2019ReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden))),
+            new RelaxAim(mods, true),
+            new RelaxAim(mods, false),
+            new RelaxSpeed(mods),
+            new RelaxReading(mods, RelaxReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden))),
         };
 
-        public static OsuRelax2019DifficultyAttributes CreateDifficultyAttributes(IBeatmap beatmap, Mod[] mods, Skill[] skills)
+        public static OsuRelaxDifficultyAttributes CreateDifficultyAttributes(IBeatmap beatmap, Mod[] mods, Skill[] skills)
         {
-            var parameters = Relax2019ReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden));
+            var parameters = RelaxReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden));
 
-            var attributes = new OsuRelax2019DifficultyAttributes
+            var attributes = new OsuRelaxDifficultyAttributes
             {
                 Mods = mods,
                 MaxCombo = beatmap.GetMaxCombo(),
@@ -87,9 +87,9 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
             if (beatmap.HitObjects.Count < 2)
                 return attributes;
 
-            var aim = skills.OfType<Relax2019Aim>().Single(a => a.FollowSliders);
-            var aimNoSliders = skills.OfType<Relax2019Aim>().Single(a => !a.FollowSliders);
-            var speed = skills.OfType<Relax2019Speed>().Single();
+            var aim = skills.OfType<RelaxAim>().Single(a => a.FollowSliders);
+            var aimNoSliders = skills.OfType<RelaxAim>().Single(a => !a.FollowSliders);
+            var speed = skills.OfType<RelaxSpeed>().Single();
 
             float aimStrain = MathF.Sqrt(aim.Difficulty()) * difficulty_multiplier;
             float aimNoSlidersStrain = MathF.Sqrt(aimNoSliders.Difficulty()) * difficulty_multiplier;
@@ -102,7 +102,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
             attributes.AimDifficultStrainCount = aim.CountDifficultStrains();
             attributes.SpeedDifficultStrainCount = speed.CountDifficultStrains();
 
-            var reading = skills.OfType<Relax2019Reading>().Single();
+            var reading = skills.OfType<RelaxReading>().Single();
             var (readingDifficulty, readingDifficultNoteCount) = reading.Evaluate();
             float readingStrain = MathF.Sqrt(readingDifficulty) * difficulty_multiplier;
 

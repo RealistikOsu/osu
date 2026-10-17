@@ -3,28 +3,28 @@ using System.Collections.Generic;
 using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Difficulty.Skills;
 using osu.Game.Rulesets.Mods;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators;
+using osu.Game.Rulesets.Osu.Difficulty.Relax.Evaluators;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax.Skills
 {
     /// <summary>
     /// Harmonic reading skill. Object difficulties depend on following objects, so they are evaluated lazily;
     /// those whose look-ahead window is complete are cached for repeated (timed) evaluation.
     /// </summary>
-    public class Relax2019Reading : Skill
+    public class RelaxReading : Skill
     {
         private const float skill_multiplier = 2.5f;
         private const float strain_decay_base = 0.8f;
         private const float harmonic_scale = 1;
         private const float decay_exponent = 0.9f;
 
-        public readonly Relax2019ReadingParameters Parameters;
+        public readonly RelaxReadingParameters Parameters;
 
-        private readonly List<Relax2019ReadingObject> objects = new List<Relax2019ReadingObject>();
+        private readonly List<RelaxReadingObject> objects = new List<RelaxReadingObject>();
         private readonly List<float> finalDifficulties = new List<float>();
         private float finalStrain;
 
-        public Relax2019Reading(Mod[] mods, Relax2019ReadingParameters parameters)
+        public RelaxReading(Mod[] mods, RelaxReadingParameters parameters)
             : base(mods)
         {
             Parameters = parameters;
@@ -32,12 +32,12 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
 
         protected override double ProcessInternal(DifficultyHitObject current)
         {
-            var obj = (Relax2019DifficultyHitObject)current;
+            var obj = (RelaxDifficultyHitObject)current;
 
             if (objects.Count == 0)
-                objects.Add(Relax2019ReadingObject.First(obj.FirstObjectTime));
+                objects.Add(RelaxReadingObject.First(obj.FirstObjectTime));
 
-            objects.Add(Relax2019ReadingObject.From(obj));
+            objects.Add(RelaxReadingObject.From(obj));
 
             return 0;
         }
@@ -126,7 +126,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
             if (index > 0)
                 strain *= MathF.Pow(strain_decay_base, objects[index].Delta / 1000);
 
-            return strain + Relax2019ReadingEvaluator.EvaluateDifficultyOf(objects, index, Parameters) * skill_multiplier;
+            return strain + RelaxReadingEvaluator.EvaluateDifficultyOf(objects, index, Parameters) * skill_multiplier;
         }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
             float time = objects[index].Time;
             float lastTime = objects[^1].Time;
 
-            return lastTime - time > Relax2019ReadingEvaluator.READING_WINDOW_SIZE || time + Parameters.TimePreemptRaw < lastTime;
+            return lastTime - time > RelaxReadingEvaluator.READING_WINDOW_SIZE || time + Parameters.TimePreemptRaw < lastTime;
         }
     }
 }

@@ -11,7 +11,7 @@ using osu.Game.Rulesets.Difficulty.Skills;
 using osu.Game.Rulesets.Difficulty.Utils;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Osu.Difficulty.Preprocessing;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019;
+using osu.Game.Rulesets.Osu.Difficulty.Relax;
 using osu.Game.Rulesets.Osu.Difficulty.Skills;
 using osu.Game.Rulesets.Osu.Difficulty.Utils;
 using osu.Game.Rulesets.Osu.Mods;
@@ -32,7 +32,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty
         protected override DifficultyAttributes CreateDifficultyAttributes(IBeatmap beatmap, Mod[] mods, Skill[] skills)
         {
             if (mods.Any(m => m is OsuModRelax))
-                return Relax2019DifficultyCalculation.CreateDifficultyAttributes(beatmap, mods, skills);
+                return RelaxDifficultyCalculation.CreateDifficultyAttributes(beatmap, mods, skills);
 
             var aim = skills.OfType<Aim>().Single(a => a.IncludeSliders);
             var aimWithoutSliders = skills.OfType<Aim>().Single(a => !a.IncludeSliders);
@@ -163,7 +163,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty
         protected override IEnumerable<DifficultyHitObject> CreateDifficultyHitObjects(IBeatmap beatmap, Mod[] mods)
         {
             if (mods.Any(m => m is OsuModRelax))
-                return Relax2019DifficultyCalculation.CreateDifficultyHitObjects(beatmap, mods);
+                return RelaxDifficultyCalculation.CreateDifficultyHitObjects(beatmap, mods);
 
             List<DifficultyHitObject> objects = new List<DifficultyHitObject>(beatmap.HitObjects.Count);
 
@@ -182,7 +182,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty
         protected override Skill[] CreateSkills(IBeatmap beatmap, Mod[] mods)
         {
             if (mods.Any(m => m is OsuModRelax))
-                return Relax2019DifficultyCalculation.CreateSkills(beatmap, mods);
+                return RelaxDifficultyCalculation.CreateSkills(beatmap, mods);
 
             var skills = new List<Skill>
             {

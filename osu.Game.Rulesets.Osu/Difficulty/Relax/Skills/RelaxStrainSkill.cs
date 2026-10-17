@@ -4,14 +4,14 @@ using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Difficulty.Skills;
 using osu.Game.Rulesets.Mods;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax.Skills
 {
     /// <summary>
-    /// 2019 strain skill: 400ms sections aligned to the first object, strain starting at 1,
+    /// Relax strain skill: 400ms sections aligned to the first object, strain starting at 1,
     /// backload spike penalty and (optionally) isolated spike penalty on the section peaks.
     /// Penalties are applied to copies so the skill can be evaluated repeatedly (timed calculation).
     /// </summary>
-    public abstract class Relax2019StrainSkill : Skill
+    public abstract class RelaxStrainSkill : Skill
     {
         private const float section_length = 400;
         private const float decay_weight = 0.9f;
@@ -32,7 +32,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
         private float currentSectionEnd;
         private float previousTime;
 
-        protected Relax2019StrainSkill(Mod[] mods)
+        protected RelaxStrainSkill(Mod[] mods)
             : base(mods)
         {
         }
@@ -43,11 +43,11 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
 
         protected virtual bool PenaliseIsolatedSpikes => false;
 
-        protected abstract float StrainValueOf(Relax2019DifficultyHitObject current);
+        protected abstract float StrainValueOf(RelaxDifficultyHitObject current);
 
         protected override double ProcessInternal(DifficultyHitObject current)
         {
-            var obj = (Relax2019DifficultyHitObject)current;
+            var obj = (RelaxDifficultyHitObject)current;
             float length = section_length * obj.Rate;
 
             if (objectStrains.Count == 0)

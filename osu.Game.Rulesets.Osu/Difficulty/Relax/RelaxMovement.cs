@@ -1,12 +1,12 @@
 using System;
 using osuTK;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax
 {
     /// <summary>
     /// Cursor movement onto an object, either following sliders to their lazy end or staying on slider heads.
     /// </summary>
-    public readonly struct Relax2019Movement
+    public readonly struct RelaxMovement
     {
         public readonly float JumpDistance;
         public readonly float TravelDistance;
@@ -17,7 +17,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
         /// </summary>
         public readonly float? NormalisedVectorAngle;
 
-        private Relax2019Movement(float jumpDistance, float travelDistance, float? angle, float? normalisedVectorAngle)
+        private RelaxMovement(float jumpDistance, float travelDistance, float? angle, float? normalisedVectorAngle)
         {
             JumpDistance = jumpDistance;
             TravelDistance = travelDistance;
@@ -25,9 +25,9 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
             NormalisedVectorAngle = normalisedVectorAngle;
         }
 
-        public static Relax2019Movement Compute(Relax2019Object current, Relax2019Object previous, Relax2019Object? previousPrevious, float scalingFactor, bool followSliders)
+        public static RelaxMovement Compute(RelaxObject current, RelaxObject previous, RelaxObject? previousPrevious, float scalingFactor, bool followSliders)
         {
-            Vector2 cursor(Relax2019Object obj) => followSliders ? obj.EndPosition : obj.Position;
+            Vector2 cursor(RelaxObject obj) => followSliders ? obj.EndPosition : obj.Position;
 
             float travelDistance = followSliders ? previous.TravelDistance ?? 0 : 0;
             Vector2 previousCursor = cursor(previous);
@@ -55,7 +55,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
                 angle = MathF.Abs(MathF.Atan2(det, dot));
             }
 
-            return new Relax2019Movement(jumpDistance, travelDistance, angle, normalisedVectorAngle);
+            return new RelaxMovement(jumpDistance, travelDistance, angle, normalisedVectorAngle);
         }
     }
 }

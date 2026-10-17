@@ -7,27 +7,27 @@ using osu.Game.Online.API.Requests.Responses;
 using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Osu.Difficulty;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019;
+using osu.Game.Rulesets.Osu.Difficulty.Relax;
 using osu.Game.Rulesets.Osu.Mods;
 using osu.Game.Rulesets.Scoring;
 using osu.Game.Scoring;
 using osu.Game.Tests.Beatmaps;
 
-namespace osu.Game.Rulesets.Osu.Tests.Relax2019
+namespace osu.Game.Rulesets.Osu.Tests.Relax
 {
     [TestFixture]
-    public class Relax2019PerformanceTest : DifficultyCalculatorTest
+    public class RelaxPerformanceTest : DifficultyCalculatorTest
     {
         protected override string ResourceAssembly => "osu.Game.Rulesets.Osu.Tests";
 
         private IWorkingBeatmap beatmap = null!;
-        private OsuRelax2019DifficultyAttributes attributes = null!;
+        private OsuRelaxDifficultyAttributes attributes = null!;
 
         [SetUp]
         public void SetUp()
         {
             beatmap = GetBeatmap("801165");
-            attributes = (OsuRelax2019DifficultyAttributes)CreateDifficultyCalculator(beatmap).Calculate(new Mod[] { new OsuModRelax() });
+            attributes = (OsuRelaxDifficultyAttributes)CreateDifficultyCalculator(beatmap).Calculate(new Mod[] { new OsuModRelax() });
         }
 
         [Test]

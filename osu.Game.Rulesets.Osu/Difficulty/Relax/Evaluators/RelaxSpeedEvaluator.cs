@@ -1,8 +1,8 @@
 using System;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax.Evaluators
 {
-    public static class Relax2019SpeedEvaluator
+    public static class RelaxSpeedEvaluator
     {
         private const float single_spacing_threshold = 125;
         private const float min_speed_bonus = 75;
@@ -14,7 +14,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
         private static readonly float pi_over_2 = (float)(Math.PI / 2);
         private static readonly float speed_angle_bonus_begin = 5 * (float)(Math.PI / 6);
 
-        public static float EvaluateDifficultyOf(Relax2019DifficultyHitObject current)
+        public static float EvaluateDifficultyOf(RelaxDifficultyHitObject current)
         {
             if (current.Object.IsSpinner)
                 return 0;

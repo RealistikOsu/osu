@@ -3,12 +3,12 @@ using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.Osu.UI;
 using osuTK;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax
 {
     /// <summary>
-    /// A hit object as seen by the 2019 calc: unstacked position, lazy slider end and slider travel.
+    /// A hit object as seen by the relax calc: unstacked position, lazy slider end and slider travel.
     /// </summary>
-    public class Relax2019Object
+    public class RelaxObject
     {
         private const double legacy_last_tick_offset = 36;
 
@@ -26,8 +26,8 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
         /// <param name="hitObject">The hit object.</param>
         /// <param name="radius">Circle radius from CS.</param>
         /// <param name="scalingFactor">Scale to normalised distances.</param>
-        /// <param name="undoVerticalReflection">Undo hard rock's reflection. The 2019 calc uses the unreflected positions, which matters for the sign of degenerate (stacked) angles.</param>
-        public Relax2019Object(OsuHitObject hitObject, float radius, float scalingFactor, bool undoVerticalReflection = false)
+        /// <param name="undoVerticalReflection">Undo hard rock's reflection. The relax calc uses the unreflected positions, which matters for the sign of degenerate (stacked) angles.</param>
+        public RelaxObject(OsuHitObject hitObject, float radius, float scalingFactor, bool undoVerticalReflection = false)
         {
             Time = (float)hitObject.StartTime;
             Position = hitObject.Position;

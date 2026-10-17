@@ -2,23 +2,23 @@ using System;
 using System.Collections.Generic;
 using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Mods;
-using osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators;
+using osu.Game.Rulesets.Osu.Difficulty.Relax.Evaluators;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax.Skills
 {
-    public class Relax2019Aim : Relax2019StrainSkill
+    public class RelaxAim : RelaxStrainSkill
     {
         private const int max_recent_objects = 8;
 
         public readonly bool FollowSliders;
 
         // Newest first.
-        private readonly List<Relax2019RecentObject> recentObjects = new List<Relax2019RecentObject>(max_recent_objects + 1);
+        private readonly List<RelaxRecentObject> recentObjects = new List<RelaxRecentObject>(max_recent_objects + 1);
 
         // Strains of objects right after a slider, i.e. ones that include its travel.
         private readonly List<float> sliderStrains = new List<float>();
 
-        public Relax2019Aim(Mod[] mods, bool followSliders)
+        public RelaxAim(Mod[] mods, bool followSliders)
             : base(mods)
         {
             FollowSliders = followSliders;
@@ -34,24 +34,24 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Skills
         {
             double strain = base.ProcessInternal(current);
 
-            if (FollowSliders && ((Relax2019DifficultyHitObject)current).WithSliders.TravelDistance > 0)
+            if (FollowSliders && ((RelaxDifficultyHitObject)current).WithSliders.TravelDistance > 0)
                 sliderStrains.Add((float)strain);
 
             return strain;
         }
 
-        protected override float StrainValueOf(Relax2019DifficultyHitObject current)
+        protected override float StrainValueOf(RelaxDifficultyHitObject current)
         {
             var movement = current.Movement(FollowSliders);
 
             (float, float)? previous = null;
 
-            if (current.Previous(0) is Relax2019DifficultyHitObject previousObject)
+            if (current.Previous(0) is RelaxDifficultyHitObject previousObject)
                 previous = (previousObject.Movement(FollowSliders).JumpDistance, previousObject.StrainTime);
 
-            float strain = Relax2019AimEvaluator.EvaluateDifficultyOf(current, movement, previous, recentObjects);
+            float strain = RelaxAimEvaluator.EvaluateDifficultyOf(current, movement, previous, recentObjects);
 
-            recentObjects.Insert(0, new Relax2019RecentObject(movement.NormalisedVectorAngle, current.NormalisedPosition, current.StrainTime, movement.JumpDistance, movement.Angle));
+            recentObjects.Insert(0, new RelaxRecentObject(movement.NormalisedVectorAngle, current.NormalisedPosition, current.StrainTime, movement.JumpDistance, movement.Angle));
 
             if (recentObjects.Count > max_recent_objects)
                 recentObjects.RemoveAt(max_recent_objects);

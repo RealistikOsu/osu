@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using osuTK;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax.Evaluators
 {
-    public static class Relax2019AimEvaluator
+    public static class RelaxAimEvaluator
     {
         private const float timing_threshold = 107;
         private const float flow_density_timing_threshold = 52;
@@ -18,8 +18,8 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
 
         private static readonly float angle_bonus_begin = (float)(Math.PI / 3);
 
-        public static float EvaluateDifficultyOf(Relax2019DifficultyHitObject current, Relax2019Movement movement, (float JumpDistance, float StrainTime)? previous,
-                                                 IReadOnlyList<Relax2019RecentObject> recentObjects)
+        public static float EvaluateDifficultyOf(RelaxDifficultyHitObject current, RelaxMovement movement, (float JumpDistance, float StrainTime)? previous,
+                                                 IReadOnlyList<RelaxRecentObject> recentObjects)
         {
             if (current.Object.IsSpinner)
                 return 0;
@@ -52,7 +52,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
         /// <summary>
         /// Penalises repeated angle patterns (kwotaq's vectorAngleRepetition).
         /// </summary>
-        private static float vectorAngleRepetition(Relax2019DifficultyHitObject current, Relax2019Movement movement, IReadOnlyList<Relax2019RecentObject> recentObjects)
+        private static float vectorAngleRepetition(RelaxDifficultyHitObject current, RelaxMovement movement, IReadOnlyList<RelaxRecentObject> recentObjects)
         {
             if (movement.Angle is not float currentAngle || movement.NormalisedVectorAngle is not float currentVectorAngle)
                 return 1;
@@ -81,16 +81,16 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
                 if (loopObject.NormalisedVectorAngle is float loopVectorAngle)
                 {
                     float angleDifference = MathF.Abs(currentVectorAngle - loopVectorAngle);
-                    constantAngleCount += MathF.Cos(8 * MathF.Min(angleDifference, Relax2019Math.Radians(11.25f)));
+                    constantAngleCount += MathF.Cos(8 * MathF.Min(angleDifference, RelaxMath.Radians(11.25f)));
                 }
             }
 
             float vectorRepetition = MathF.Min(repetition_threshold / MathF.Max(constantAngleCount, 0), 1);
             vectorRepetition *= vectorRepetition;
 
-            float stackFactor = Relax2019Math.Smootherstep(movement.JumpDistance, 0, normalised_diameter);
+            float stackFactor = RelaxMath.Smootherstep(movement.JumpDistance, 0, normalised_diameter);
 
-            float angleDifferenceAdjusted = MathF.Cos(2 * MathF.Min(MathF.Abs(currentAngle - lastAngle) * stackFactor, Relax2019Math.Radians(45)));
+            float angleDifferenceAdjusted = MathF.Cos(2 * MathF.Min(MathF.Abs(currentAngle - lastAngle) * stackFactor, RelaxMath.Radians(45)));
 
             float overlappedNotesWeight = 3;
 
@@ -116,7 +116,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
         /// <summary>
         /// Buffs fast, acute flow aim without broadly buffing jumps.
         /// </summary>
-        private static float flowDensityBonus(Relax2019DifficultyHitObject current, Relax2019Movement movement)
+        private static float flowDensityBonus(RelaxDifficultyHitObject current, RelaxMovement movement)
         {
             if (movement.Angle is not float angle)
                 return 1;
@@ -128,7 +128,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
             return 1 + flow_density_max_bonus * fastness * acute * jumpControl;
         }
 
-        private static float calcAcuteAngleBonus(float angle) => Relax2019Math.Smoothstep(angle, Relax2019Math.Radians(140), Relax2019Math.Radians(40));
+        private static float calcAcuteAngleBonus(float angle) => RelaxMath.Smoothstep(angle, RelaxMath.Radians(140), RelaxMath.Radians(40));
 
         private static float overlapness(Vector2 a, Vector2 b)
         {
@@ -145,5 +145,5 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019.Evaluators
     /// <summary>
     /// What the aim skill remembers about a recent object for angle repetition lookback.
     /// </summary>
-    public readonly record struct Relax2019RecentObject(float? NormalisedVectorAngle, Vector2 NormalisedPosition, float StrainTime, float JumpDistance, float? Angle);
+    public readonly record struct RelaxRecentObject(float? NormalisedVectorAngle, Vector2 NormalisedPosition, float StrainTime, float JumpDistance, float? Angle);
 }

@@ -1,8 +1,8 @@
 using System;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax
 {
-    public static class Relax2019Math
+    public static class RelaxMath
     {
         private static readonly float radians_per_degree = MathF.PI / 180;
 

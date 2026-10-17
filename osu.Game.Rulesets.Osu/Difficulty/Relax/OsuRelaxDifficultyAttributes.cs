@@ -2,14 +2,14 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using osu.Game.Beatmaps;
 
-namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
+namespace osu.Game.Rulesets.Osu.Difficulty.Relax
 {
     /// <summary>
-    /// Relax difficulty from the 2019 calc. <see cref="OsuPerformanceCalculator"/> computes 2019 pp for these.
-    /// Aim, speed and reading difficulty hold the 2019 strains.
+    /// Relax difficulty. <see cref="OsuPerformanceCalculator"/> computes relax pp for these.
+    /// Aim, speed and reading difficulty hold the relax strains.
     /// Inherited modern-only fields (speed note count, top-weighted slider factors, legacy score fields) are not populated.
     /// </summary>
-    public class OsuRelax2019DifficultyAttributes : OsuDifficultyAttributes
+    public class OsuRelaxDifficultyAttributes : OsuDifficultyAttributes
     {
         /// <summary>
         /// Overall difficulty after mods, not adjusted for clock rate.
