@@ -1,0 +1,3455 @@
+[
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.679356575012207,
+      "aim_difficult_strain_count": 28.04337501525879,
+      "aim_strain": 3.430873394012451,
+      "ar": 8.300000190734863,
+      "effective_ar": 8.300000190734863,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 37.97838592529297,
+      "reading_strain": 1.7922065258026123,
+      "slider_factor": 0.9998457431793213,
+      "speed_difficult_strain_count": 26.729366302490234,
+      "speed_strain": 2.4779703617095947,
+      "stars": 8.132979393005371
+    },
+    "map": "diffcalc-test",
+    "mods": [],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 183.27450561523438,
+        "pp_acc": 5.485273361206055,
+        "pp_aim": 103.5553970336914,
+        "pp_reading": 6.870514392852783,
+        "pp_speed": 39.35016632080078
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 144.40785217285156,
+        "pp_acc": 2.846212148666382,
+        "pp_aim": 83.4375,
+        "pp_reading": 5.366710662841797,
+        "pp_speed": 30.731781005859375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.679356575012207,
+      "aim_difficult_strain_count": 28.04337501525879,
+      "aim_strain": 3.430873394012451,
+      "ar": 8.300000190734863,
+      "effective_ar": 8.300000190734863,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 39.604305267333984,
+      "reading_strain": 2.247354745864868,
+      "slider_factor": 0.9998457431793213,
+      "speed_difficult_strain_count": 26.729366302490234,
+      "speed_strain": 2.4779703617095947,
+      "stars": 8.512269020080566
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "HD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 188.97402954101562,
+        "pp_acc": 5.485273361206055,
+        "pp_aim": 103.5553970336914,
+        "pp_reading": 13.804218292236328,
+        "pp_speed": 39.35016632080078
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 148.86874389648438,
+        "pp_acc": 2.846212148666382,
+        "pp_aim": 83.4375,
+        "pp_reading": 10.797744750976562,
+        "pp_speed": 30.731781005859375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 9.35602855682373,
+      "aim_difficult_strain_count": 28.643972396850586,
+      "aim_strain": 3.733483076095581,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 9.800000190734863,
+      "reading_difficult_note_count": 35.95121765136719,
+      "reading_strain": 1.2165971994400024,
+      "slider_factor": 0.9998020529747009,
+      "speed_difficult_strain_count": 26.872802734375,
+      "speed_strain": 2.4834401607513428,
+      "stars": 8.061342239379883
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "HR"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 247.523681640625,
+        "pp_acc": 17.769027709960938,
+        "pp_aim": 136.48590087890625,
+        "pp_reading": 2.05576229095459,
+        "pp_speed": 43.647953033447266
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 192.22496032714844,
+        "pp_acc": 9.220037460327148,
+        "pp_aim": 110.05281829833984,
+        "pp_reading": 1.6028187274932861,
+        "pp_speed": 34.618953704833984
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 6.52510404586792,
+      "aim_difficult_strain_count": 28.558197021484375,
+      "aim_strain": 4.337968349456787,
+      "ar": 8.300000190734863,
+      "effective_ar": 9.866666793823242,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 35.69718933105469,
+      "reading_strain": 2.4112870693206787,
+      "slider_factor": 0.9993868470191956,
+      "speed_difficult_strain_count": 29.576683044433594,
+      "speed_strain": 3.2906079292297363,
+      "stars": 10.535536766052246
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 388.9777526855469,
+        "pp_acc": 5.485273361206055,
+        "pp_aim": 211.4302978515625,
+        "pp_reading": 17.136520385742188,
+        "pp_speed": 93.7123794555664
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 307.8360595703125,
+        "pp_acc": 2.846212148666382,
+        "pp_aim": 170.3099822998047,
+        "pp_reading": 13.357589721679688,
+        "pp_speed": 73.4779281616211
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.628721237182617,
+      "aim_difficult_strain_count": 28.185068130493164,
+      "aim_strain": 2.739945411682129,
+      "ar": 8.300000190734863,
+      "effective_ar": 6.733333587646484,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 35.840423583984375,
+      "reading_strain": 1.472261667251587,
+      "slider_factor": 0.9999485611915588,
+      "speed_difficult_strain_count": 25.31987953186035,
+      "speed_strain": 1.7718226909637451,
+      "stars": 6.356664180755615
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "HT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 90.03594207763672,
+        "pp_acc": 5.485273361206055,
+        "pp_aim": 52.109867095947266,
+        "pp_reading": 3.7321083545684814,
+        "pp_speed": 13.996981620788574
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 70.19200134277344,
+        "pp_acc": 2.846212148666382,
+        "pp_aim": 42.003849029541016,
+        "pp_reading": 2.909508466720581,
+        "pp_speed": 10.907261848449707
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.451261520385742,
+      "aim_difficult_strain_count": 27.393388748168945,
+      "aim_strain": 3.0312469005584717,
+      "ar": 4.150000095367432,
+      "effective_ar": 4.150000095367432,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 3.5,
+      "reading_difficult_note_count": 42.81735610961914,
+      "reading_strain": 2.2931549549102783,
+      "slider_factor": 0.9999182820320129,
+      "speed_difficult_strain_count": 26.623987197875977,
+      "speed_strain": 2.472539186477661,
+      "stars": 8.013073921203613
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "EZ"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 144.60108947753906,
+        "pp_acc": 1.2621660232543945,
+        "pp_aim": 78.38745880126953,
+        "pp_reading": 14.687150001525879,
+        "pp_speed": 37.16191101074219
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 114.65692138671875,
+        "pp_acc": 0.6549158692359924,
+        "pp_aim": 63.11042022705078,
+        "pp_reading": 11.517196655273438,
+        "pp_speed": 29.0181827545166
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 5.4380202293396,
+      "aim_difficult_strain_count": 28.187719345092773,
+      "aim_strain": 3.8470897674560547,
+      "ar": 4.150000095367432,
+      "effective_ar": 7.2133331298828125,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 3.5,
+      "reading_difficult_note_count": 42.793025970458984,
+      "reading_strain": 2.912677526473999,
+      "slider_factor": 0.9996687769889832,
+      "speed_difficult_strain_count": 29.444517135620117,
+      "speed_strain": 3.282261610031128,
+      "stars": 10.291902542114258
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "EZ",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 306.262939453125,
+        "pp_acc": 1.2621660232543945,
+        "pp_aim": 159.68260192871094,
+        "pp_reading": 30.561918258666992,
+        "pp_speed": 88.41118621826172
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 243.21766662597656,
+        "pp_acc": 0.6549158692359924,
+        "pp_aim": 128.63818359375,
+        "pp_reading": 23.96525764465332,
+        "pp_speed": 69.30955505371094
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.679356575012207,
+      "aim_difficult_strain_count": 28.04337501525879,
+      "aim_strain": 3.430873394012451,
+      "ar": 8.300000190734863,
+      "effective_ar": 8.300000190734863,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 37.97838592529297,
+      "reading_strain": 1.7922065258026123,
+      "slider_factor": 0.9998457431793213,
+      "speed_difficult_strain_count": 26.729366302490234,
+      "speed_strain": 2.4779703617095947,
+      "stars": 8.132979393005371
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "FL"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 215.5873565673828,
+        "pp_acc": 5.5949788093566895,
+        "pp_aim": 122.81669616699219,
+        "pp_reading": 6.870514392852783,
+        "pp_speed": 39.35016632080078
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 169.9969024658203,
+        "pp_acc": 2.9031362533569336,
+        "pp_aim": 98.95687866210938,
+        "pp_reading": 5.366710662841797,
+        "pp_speed": 30.731781005859375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.809386253356934,
+      "aim_difficult_strain_count": 27.943872451782227,
+      "aim_strain": 4.009028434753418,
+      "ar": 8.300000190734863,
+      "effective_ar": 9.269841194152832,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 38.72068405151367,
+      "reading_strain": 2.087286949157715,
+      "slider_factor": 0.9997032284736633,
+      "speed_difficult_strain_count": 28.062179565429688,
+      "speed_strain": 2.6400082111358643,
+      "stars": 9.284783363342285
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": 1.26,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 295.2168273925781,
+        "pp_acc": 5.485273361206055,
+        "pp_aim": 166.37083435058594,
+        "pp_reading": 10.997173309326172,
+        "pp_speed": 47.78534698486328
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 233.11720275878906,
+        "pp_acc": 2.846212148666382,
+        "pp_aim": 133.990478515625,
+        "pp_reading": 8.59566879272461,
+        "pp_speed": 37.39159393310547
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.679356575012207,
+      "aim_difficult_strain_count": 28.04337501525879,
+      "aim_strain": 3.430873394012451,
+      "ar": 8.300000190734863,
+      "effective_ar": 8.300000190734863,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 37.97838592529297,
+      "reading_strain": 1.7922065258026123,
+      "slider_factor": 0.9998457431793213,
+      "speed_difficult_strain_count": 26.729366302490234,
+      "speed_strain": 2.4779703617095947,
+      "stars": 8.132979393005371
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "SO"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 158.09786987304688,
+        "pp_acc": 5.485273361206055,
+        "pp_aim": 103.5553970336914,
+        "pp_reading": 6.870514392852783,
+        "pp_speed": 39.35016632080078
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 124.57037353515625,
+        "pp_acc": 2.846212148666382,
+        "pp_aim": 83.4375,
+        "pp_reading": 5.366710662841797,
+        "pp_speed": 30.731781005859375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 8.679356575012207,
+      "aim_difficult_strain_count": 28.04337501525879,
+      "aim_strain": 3.430873394012451,
+      "ar": 8.300000190734863,
+      "effective_ar": 8.300000190734863,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 7.0,
+      "reading_difficult_note_count": 37.97838592529297,
+      "reading_strain": 1.7922065258026123,
+      "slider_factor": 0.9998457431793213,
+      "speed_difficult_strain_count": 26.729366302490234,
+      "speed_strain": 2.4779703617095947,
+      "stars": 8.132979393005371
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "TD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 95.1339111328125,
+        "pp_acc": 5.485273361206055,
+        "pp_aim": 48.76308059692383,
+        "pp_reading": 6.870514392852783,
+        "pp_speed": 39.35016632080078
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 74.51031494140625,
+        "pp_acc": 2.846212148666382,
+        "pp_aim": 39.28971862792969,
+        "pp_reading": 5.366710662841797,
+        "pp_speed": 30.731781005859375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 7.230101108551025,
+      "aim_difficult_strain_count": 28.92914581298828,
+      "aim_strain": 4.728470325469971,
+      "ar": 10.0,
+      "effective_ar": 11.0,
+      "max_combo": 239,
+      "n_circles": 79,
+      "n_sliders": 33,
+      "n_spinners": 12,
+      "od": 9.800000190734863,
+      "reading_difficult_note_count": 42.43378448486328,
+      "reading_strain": 3.76459002494812,
+      "slider_factor": 0.9992035627365112,
+      "speed_difficult_strain_count": 29.70775032043457,
+      "speed_strain": 3.2977960109710693,
+      "stars": 12.189949035644531
+    },
+    "map": "diffcalc-test",
+    "mods": [
+      "HD",
+      "HR",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 239,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 6,
+        "n300": 117,
+        "n50": 1,
+        "pp": 565.3540649414062,
+        "pp_acc": 17.769027709960938,
+        "pp_aim": 279.8494567871094,
+        "pp_reading": 66.83656311035156,
+        "pp_speed": 103.9363784790039
+      },
+      {
+        "combo": 119,
+        "effective_miss_count": 2.0,
+        "misses": 2,
+        "n100": 6,
+        "n300": 115,
+        "n50": 1,
+        "pp": 444.4482116699219,
+        "pp_acc": 9.220037460327148,
+        "pp_aim": 225.44754028320312,
+        "pp_reading": 52.396217346191406,
+        "pp_speed": 82.75916290283203
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 18.732576370239258,
+      "aim_strain": 3.307905435562134,
+      "ar": 8.300000190734863,
+      "effective_ar": 8.300000190734863,
+      "max_combo": 62,
+      "n_circles": 62,
+      "n_sliders": 0,
+      "n_spinners": 0,
+      "od": 7.0,
+      "reading_difficult_note_count": 23.414945602416992,
+      "reading_strain": 1.6194950342178345,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 21.937782287597656,
+      "speed_strain": 2.273876190185547,
+      "stars": 7.6550164222717285
+    },
+    "map": "diffcalc-test",
+    "mods": [],
+    "passed_objects": 62,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 62,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 3,
+        "n300": 59,
+        "n50": 0,
+        "pp": 164.41542053222656,
+        "pp_acc": 10.565658569335938,
+        "pp_aim": 91.55144500732422,
+        "pp_reading": 5.161145210266113,
+        "pp_speed": 30.751296997070312
+      },
+      {
+        "combo": 31,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 3,
+        "n300": 58,
+        "n50": 0,
+        "pp": 137.8073272705078,
+        "pp_acc": 7.058543682098389,
+        "pp_aim": 78.55290985107422,
+        "pp_reading": 4.269885540008545,
+        "pp_speed": 25.723770141601562
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.544726371765137,
+      "aim_difficult_strain_count": 5.6131591796875,
+      "aim_strain": 0.621737003326416,
+      "ar": 4.5,
+      "effective_ar": 4.5,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.27569779753685,
+      "speed_difficult_strain_count": 7.259146690368652,
+      "speed_strain": 0.2819589078426361,
+      "stars": 1.063948392868042
+    },
+    "map": "zero-length-sliders",
+    "mods": [],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.572829008102417,
+        "pp_acc": 0.0,
+        "pp_aim": 0.49290362000465393,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03395601361989975
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.2712761163711548,
+        "pp_acc": 0.0,
+        "pp_aim": 0.23331080377101898,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.019648278132081032
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.544726371765137,
+      "aim_difficult_strain_count": 5.6131591796875,
+      "aim_strain": 0.621737003326416,
+      "ar": 4.5,
+      "effective_ar": 4.5,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 4.977625370025635,
+      "reading_strain": 0.5196320414543152,
+      "slider_factor": 0.27569779753685,
+      "speed_difficult_strain_count": 7.259146690368652,
+      "speed_strain": 0.2819589078426361,
+      "stars": 1.496975064277649
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "HD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.7071355581283569,
+        "pp_acc": 0.0,
+        "pp_aim": 0.49290362000465393,
+        "pp_reading": 0.15483935177326202,
+        "pp_speed": 0.03395601361989975
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.34118640422821045,
+        "pp_acc": 0.0,
+        "pp_aim": 0.23331080377101898,
+        "pp_reading": 0.07998156547546387,
+        "pp_speed": 0.019648278132081032
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 5.112405776977539,
+      "aim_difficult_strain_count": 6.012429237365723,
+      "aim_strain": 0.6914278268814087,
+      "ar": 6.299999713897705,
+      "effective_ar": 6.299999713897705,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 4.199999809265137,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.2595541477203369,
+      "speed_difficult_strain_count": 7.259146690368652,
+      "speed_strain": 0.2819589078426361,
+      "stars": 1.1568695306777954
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "HR"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.8048442602157593,
+        "pp_acc": 0.0,
+        "pp_aim": 0.7000621557235718,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.034371268004179
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.3912719488143921,
+        "pp_acc": 0.0,
+        "pp_aim": 0.34700459241867065,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.019888561218976974
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.595898628234863,
+      "aim_difficult_strain_count": 6.778857231140137,
+      "aim_strain": 0.7405675649642944,
+      "ar": 4.5,
+      "effective_ar": 7.400000095367432,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.2606147825717926,
+      "speed_difficult_strain_count": 8.261963844299316,
+      "speed_strain": 0.35105857253074646,
+      "stars": 1.2799723148345947
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 1.0571272373199463,
+        "pp_acc": 0.0,
+        "pp_aim": 0.8717061877250671,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.07541821897029877
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.5072723031044006,
+        "pp_acc": 0.0,
+        "pp_aim": 0.4186677038669586,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.0439344085752964
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.507615089416504,
+      "aim_difficult_strain_count": 5.732845306396484,
+      "aim_strain": 0.5257406234741211,
+      "ar": 4.5,
+      "effective_ar": 1.0,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.30490896105766296,
+      "speed_difficult_strain_count": 6.708650588989258,
+      "speed_strain": 0.212594136595726,
+      "stars": 0.8781492710113525
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "HT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.30702686309814453,
+        "pp_acc": 0.0,
+        "pp_aim": 0.28276798129081726,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.011355058290064335
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.1447359025478363,
+        "pp_acc": 0.0,
+        "pp_aim": 0.13490329682826996,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.0065409294329583645
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 3.589296579360962,
+      "aim_difficult_strain_count": 4.794116497039795,
+      "aim_strain": 0.5190947651863098,
+      "ar": 2.25,
+      "effective_ar": 2.25,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 1.5,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.308696448802948,
+      "speed_difficult_strain_count": 7.259146690368652,
+      "speed_strain": 0.2819589078426361,
+      "stars": 0.9270920753479004
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "EZ"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.3625657856464386,
+        "pp_acc": 0.0,
+        "pp_aim": 0.2978801727294922,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.033631592988967896
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.1635320484638214,
+        "pp_acc": 0.0,
+        "pp_aim": 0.12624453008174896,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.01946055330336094
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 3.628802537918091,
+      "aim_difficult_strain_count": 5.819985866546631,
+      "aim_strain": 0.6146621108055115,
+      "ar": 2.25,
+      "effective_ar": 6.199999809265137,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 1.5,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.29285526275634766,
+      "speed_difficult_strain_count": 8.261963844299316,
+      "speed_strain": 0.35105857253074646,
+      "stars": 1.112098217010498
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "EZ",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.6621988415718079,
+        "pp_acc": 0.0,
+        "pp_aim": 0.5210798382759094,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.07469766587018967
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.3031919598579407,
+        "pp_acc": 0.0,
+        "pp_aim": 0.2248499095439911,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.04351465031504631
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.544726371765137,
+      "aim_difficult_strain_count": 5.6131591796875,
+      "aim_strain": 0.621737003326416,
+      "ar": 4.5,
+      "effective_ar": 4.5,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.27569779753685,
+      "speed_difficult_strain_count": 7.259146690368652,
+      "speed_strain": 0.2819589078426361,
+      "stars": 1.063948392868042
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "FL"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.5801439881324768,
+        "pp_acc": 0.0,
+        "pp_aim": 0.4995577931404114,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03395601361989975
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.2745252549648285,
+        "pp_acc": 0.0,
+        "pp_aim": 0.23646049201488495,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.019648278132081032
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.5746541023254395,
+      "aim_difficult_strain_count": 5.842497825622559,
+      "aim_strain": 0.7026408314704895,
+      "ar": 4.5,
+      "effective_ar": 6.333333492279053,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.2541947662830353,
+      "speed_difficult_strain_count": 7.6157002449035645,
+      "speed_strain": 0.29300928115844727,
+      "stars": 1.1810288429260254
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": 1.26,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.8516961932182312,
+        "pp_acc": 0.0,
+        "pp_aim": 0.7350776195526123,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.039166081696748734
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.3964281976222992,
+        "pp_acc": 0.0,
+        "pp_aim": 0.3471847474575043,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.022721659392118454
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.544726371765137,
+      "aim_difficult_strain_count": 5.6131591796875,
+      "aim_strain": 0.621737003326416,
+      "ar": 4.5,
+      "effective_ar": 4.5,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.27569779753685,
+      "speed_difficult_strain_count": 7.259146690368652,
+      "speed_strain": 0.2819589078426361,
+      "stars": 1.063948392868042
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "SO"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.572829008102417,
+        "pp_acc": 0.0,
+        "pp_aim": 0.49290362000465393,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03395601361989975
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.2712761163711548,
+        "pp_acc": 0.0,
+        "pp_aim": 0.23331080377101898,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.019648278132081032
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 4.544726371765137,
+      "aim_difficult_strain_count": 5.6131591796875,
+      "aim_strain": 0.621737003326416,
+      "ar": 4.5,
+      "effective_ar": 4.5,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.27569779753685,
+      "speed_difficult_strain_count": 7.259146690368652,
+      "speed_strain": 0.2819589078426361,
+      "stars": 1.063948392868042
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "TD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 0.7732029557228088,
+        "pp_acc": 0.0,
+        "pp_aim": 0.6726447343826294,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03395601361989975
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.3615611493587494,
+        "pp_acc": 0.0,
+        "pp_aim": 0.31952738761901855,
+        "pp_reading": 2.261597501274082e-6,
+        "pp_speed": 0.019648278132081032
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 5.1772661209106445,
+      "aim_difficult_strain_count": 7.20218563079834,
+      "aim_strain": 0.8255440592765808,
+      "ar": 6.299999713897705,
+      "effective_ar": 8.533332824707031,
+      "max_combo": 54,
+      "n_circles": 0,
+      "n_sliders": 9,
+      "n_spinners": 0,
+      "od": 4.199999809265137,
+      "reading_difficult_note_count": 4.4834184646606445,
+      "reading_strain": 0.44050732254981995,
+      "slider_factor": 0.24513256549835205,
+      "speed_difficult_strain_count": 8.261963844299316,
+      "speed_strain": 0.35105857253074646,
+      "stars": 1.7603635787963867
+    },
+    "map": "zero-length-sliders",
+    "mods": [
+      "HD",
+      "HR",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 54,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 9,
+        "n50": 0,
+        "pp": 1.5565557479858398,
+        "pp_acc": 0.0,
+        "pp_aim": 1.2414400577545166,
+        "pp_reading": 0.0885576382279396,
+        "pp_speed": 0.07634052634239197
+      },
+      {
+        "combo": 27,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 8,
+        "n50": 0,
+        "pp": 0.7679876685142517,
+        "pp_acc": 0.0,
+        "pp_aim": 0.623724639415741,
+        "pp_reading": 0.04533467814326286,
+        "pp_speed": 0.04447169229388237
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 2.783273696899414,
+      "aim_difficult_strain_count": 3.299960136413574,
+      "aim_strain": 0.4019218981266022,
+      "ar": 4.5,
+      "effective_ar": 4.5,
+      "max_combo": 21,
+      "n_circles": 0,
+      "n_sliders": 4,
+      "n_spinners": 0,
+      "od": 3.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 0.2705983519554138,
+      "speed_difficult_strain_count": 3.2999978065490723,
+      "speed_strain": 0.21838995814323425,
+      "stars": 0.7178875207901001
+    },
+    "map": "zero-length-sliders",
+    "mods": [],
+    "passed_objects": 4,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 21,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.1371118277311325,
+        "pp_acc": 0.0,
+        "pp_aim": 0.11322875320911407,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.012634800747036934
+      },
+      {
+        "combo": 10,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 3,
+        "n50": 0,
+        "pp": 0.03789613023400307,
+        "pp_acc": 0.0,
+        "pp_aim": 0.02852078713476658,
+        "pp_reading": 1.1462263955763774e-6,
+        "pp_speed": 0.003930228296667337
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.25937166810035706,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.27759408950805664,
+      "stars": 0.5862684845924377
+    },
+    "map": "very-fast-slider",
+    "mods": [],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.14576980471611023,
+        "pp_acc": 0.0,
+        "pp_aim": 0.019880197942256927,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03521352633833885
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.09499333798885345,
+        "pp_acc": 0.0,
+        "pp_aim": 0.001240032957866788,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0015330016613006592
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.25937166810035706,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.27759408950805664,
+      "stars": 0.5862684845924377
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "HD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.14576980471611023,
+        "pp_acc": 0.0,
+        "pp_aim": 0.019880197942256927,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03521352633833885
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.09499333798885345,
+        "pp_acc": 0.0,
+        "pp_aim": 0.001240032957866788,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0015330016613006592
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.2794884741306305,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 10.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.2809217572212219,
+      "stars": 0.6074694395065308
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "HR"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.15632955729961395,
+        "pp_acc": 0.0,
+        "pp_aim": 0.026510637253522873,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.037716589868068695
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.11120174825191498,
+        "pp_acc": 0.0,
+        "pp_aim": 0.0016536085167899728,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.002322097774595022
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.3149469792842865,
+      "ar": 9.300000190734863,
+      "effective_ar": 10.533332824707031,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.3612775504589081,
+      "stars": 0.7441592216491699
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.270107626914978,
+        "pp_acc": 0.0,
+        "pp_aim": 0.04078083485364914,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.09179823100566864
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.13673432171344757,
+        "pp_acc": 0.0,
+        "pp_aim": 0.0025437159929424524,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0039963857270777225
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.22631387412548065,
+      "ar": 9.300000190734863,
+      "effective_ar": 8.066667556762695,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.21533958613872528,
+      "stars": 0.4812014698982239
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "HT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.0790058821439743,
+        "pp_acc": 0.0,
+        "pp_aim": 0.011742481961846352,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.013147285208106041
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.06544339656829834,
+        "pp_acc": 0.0,
+        "pp_aim": 0.0007324405596591532,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0005723598878830671
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.2342723160982132,
+      "ar": 4.650000095367432,
+      "effective_ar": 4.650000095367432,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 4.5,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.2751803994178772,
+      "stars": 0.5621341466903687
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "EZ"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.13290446996688843,
+        "pp_acc": 0.0,
+        "pp_aim": 0.014439229853451252,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.0314200185239315
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.07977664470672607,
+        "pp_acc": 0.0,
+        "pp_aim": 0.0009006510954350233,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0009672183659859002
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.28391265869140625,
+      "ar": 4.650000095367432,
+      "effective_ar": 7.480000019073486,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 4.5,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.357463002204895,
+      "stars": 0.7132112383842468
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "EZ",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.24482299387454987,
+        "pp_acc": 0.0,
+        "pp_aim": 0.02994658797979355,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.08150975406169891
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.11457708477973938,
+        "pp_acc": 0.0,
+        "pp_aim": 0.001867926912382245,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.002509156009182334
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.25937166810035706,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.27759408950805664,
+      "stars": 0.5862684845924377
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "FL"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.1458113044500351,
+        "pp_acc": 0.0,
+        "pp_aim": 0.019939837977290154,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03521352633833885
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.09499495476484299,
+        "pp_acc": 0.0,
+        "pp_aim": 0.0012437530094757676,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0015330016613006592
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.2896394729614258,
+      "ar": 9.300000190734863,
+      "effective_ar": 10.063491821289062,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.28471696376800537,
+      "stars": 0.6234501004219055
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": 1.26,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.1611815094947815,
+        "pp_acc": 0.0,
+        "pp_aim": 0.030029164627194405,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03870652988553047
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.09871145337820053,
+        "pp_acc": 0.0,
+        "pp_aim": 0.001873077591881156,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.001685067662037909
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.25937166810035706,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.27759408950805664,
+      "stars": 0.5862684845924377
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "SO"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.14576980471611023,
+        "pp_acc": 0.0,
+        "pp_aim": 0.019880197942256927,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03521352633833885
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.09499333798885345,
+        "pp_acc": 0.0,
+        "pp_aim": 0.001240032957866788,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0015330016613006592
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.25937166810035706,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 9.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.27759408950805664,
+      "stars": 0.5862684845924377
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "TD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.1716308742761612,
+        "pp_acc": 0.0,
+        "pp_aim": 0.05354038253426552,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.03521352633833885
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.09600900113582611,
+        "pp_acc": 0.0,
+        "pp_aim": 0.0033395965583622456,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0015330016613006592
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.3397820293903351,
+      "ar": 10.0,
+      "effective_ar": 11.0,
+      "max_combo": 4,
+      "n_circles": 0,
+      "n_sliders": 2,
+      "n_spinners": 0,
+      "od": 10.0,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.36652496457099915,
+      "stars": 0.771851658821106
+    },
+    "map": "very-fast-slider",
+    "mods": [
+      "HD",
+      "HR",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 4,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 0.29182058572769165,
+        "pp_acc": 0.0,
+        "pp_aim": 0.05396994203329086,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.09895866364240646
+      },
+      {
+        "combo": 2,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.16051796078681946,
+        "pp_acc": 0.0,
+        "pp_aim": 0.0033663902431726456,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0060925898142158985
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.399997234344482,
+      "aim_strain": 0.08322383463382721,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 2.400045871734619,
+      "reading_strain": 0.08126087486743927,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399999141693115,
+      "speed_strain": 0.45112988352775574,
+      "stars": 0.738577127456665
+    },
+    "map": "nan-slider",
+    "mods": [],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 37.72038269042969,
+        "pp_acc": 30.378870010375977,
+        "pp_aim": 0.000057597975683165714,
+        "pp_reading": 0.0000310722243739292,
+        "pp_speed": 0.2017521858215332
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.3777477741241455,
+        "pp_acc": 0.030481891706585884,
+        "pp_aim": 0.000025607398129068315,
+        "pp_reading": 9.520947060082108e-6,
+        "pp_speed": 0.09559816122055054
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.399997234344482,
+      "aim_strain": 0.08322383463382721,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 2.4268710613250732,
+      "reading_strain": 0.3787355422973633,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399999141693115,
+      "speed_strain": 0.45112988352775574,
+      "stars": 0.9864726662635803
+    },
+    "map": "nan-slider",
+    "mods": [
+      "HD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 37.74756622314453,
+        "pp_acc": 30.378870010375977,
+        "pp_aim": 0.000057597975683165714,
+        "pp_reading": 0.052522119134664536,
+        "pp_speed": 0.2017521858215332
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.3894920349121094,
+        "pp_acc": 0.030481891706585884,
+        "pp_aim": 0.000025607398129068315,
+        "pp_reading": 0.016135474666953087,
+        "pp_speed": 0.09559816122055054
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.399997234344482,
+      "aim_strain": 0.08322383463382721,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 10.0,
+      "reading_difficult_note_count": 2.400045871734619,
+      "reading_strain": 0.08126087486743927,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399999141693115,
+      "speed_strain": 0.45112988352775574,
+      "stars": 0.738577127456665
+    },
+    "map": "nan-slider",
+    "mods": [
+      "HR"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 44.843875885009766,
+        "pp_acc": 35.93313980102539,
+        "pp_aim": 0.00005777559999842197,
+        "pp_reading": 0.0000310722243739292,
+        "pp_speed": 0.20375525951385498
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.3914022445678711,
+        "pp_acc": 0.03605499863624573,
+        "pp_aim": 0.00002568636955402326,
+        "pp_reading": 9.520947060082108e-6,
+        "pp_speed": 0.10095367580652237
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.400000095367432,
+      "aim_strain": 0.08174322545528412,
+      "ar": 10.0,
+      "effective_ar": 11.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 2.38468599319458,
+      "reading_strain": 0.4629162549972534,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399932384490967,
+      "speed_strain": 0.6066537499427795,
+      "stars": 1.2627546787261963
+    },
+    "map": "nan-slider",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 38.00537109375,
+        "pp_acc": 30.378870010375977,
+        "pp_aim": 0.00004927954068989493,
+        "pp_reading": 0.10487112402915955,
+        "pp_speed": 0.5451181530952454
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.6163961291313171,
+        "pp_acc": 0.030481891706585884,
+        "pp_aim": 0.000021909118004259653,
+        "pp_reading": 0.03208474814891815,
+        "pp_speed": 0.25829818844795227
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.373000144958496,
+      "aim_strain": 0.09104201942682266,
+      "ar": 10.0,
+      "effective_ar": 9.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399959564208984,
+      "speed_strain": 0.3866864740848541,
+      "stars": 0.5914503335952759
+    },
+    "map": "nan-slider",
+    "mods": [
+      "HT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 37.64945602416992,
+        "pp_acc": 30.378870010375977,
+        "pp_aim": 0.00011729503603419289,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.11840246617794037
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.29834622144699097,
+        "pp_acc": 0.030481891706585884,
+        "pp_aim": 0.00005211793541093357,
+        "pp_reading": 1.4838341257927823e-6,
+        "pp_speed": 0.05610372871160507
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.399997234344482,
+      "aim_strain": 0.08322383463382721,
+      "ar": 5.0,
+      "effective_ar": 5.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 4.800000190734863,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399999141693115,
+      "speed_strain": 0.45112988352775574,
+      "stars": 0.670859694480896
+    },
+    "map": "nan-slider",
+    "mods": [
+      "EZ"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 4.911616802215576,
+        "pp_acc": 4.050307750701904,
+        "pp_aim": 0.000061672086303588,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.18409253656864166
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.31616824865341187,
+        "pp_acc": 0.004064043052494526,
+        "pp_aim": 0.000027418700483394787,
+        "pp_reading": 1.4838341257927823e-6,
+        "pp_speed": 0.07296919077634811
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.400000095367432,
+      "aim_strain": 0.08174322545528412,
+      "ar": 5.0,
+      "effective_ar": 7.6666669845581055,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 4.800000190734863,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399932384490967,
+      "speed_strain": 0.6066537499427795,
+      "stars": 0.8769910335540771
+    },
+    "map": "nan-slider",
+    "mods": [
+      "EZ",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 5.172153949737549,
+        "pp_acc": 4.050307750701904,
+        "pp_aim": 0.00005273713395581581,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.49740317463874817
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.5057550072669983,
+        "pp_acc": 0.004064043052494526,
+        "pp_aim": 0.00002344632775930222,
+        "pp_reading": 1.4838341257927823e-6,
+        "pp_speed": 0.19715659320354462
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.399997234344482,
+      "aim_strain": 0.08322383463382721,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 2.400045871734619,
+      "reading_strain": 0.08126087486743927,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399999141693115,
+      "speed_strain": 0.45112988352775574,
+      "stars": 0.738577127456665
+    },
+    "map": "nan-slider",
+    "mods": [
+      "FL"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 38.49724578857422,
+        "pp_acc": 30.986446380615234,
+        "pp_aim": 0.000058029960200656205,
+        "pp_reading": 0.0000310722243739292,
+        "pp_speed": 0.2017521858215332
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.3782181143760681,
+        "pp_acc": 0.03109152987599373,
+        "pp_aim": 0.0000257994543062523,
+        "pp_reading": 9.520947060082108e-6,
+        "pp_speed": 0.09559816122055054
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.400000095367432,
+      "aim_strain": 0.08670002967119217,
+      "ar": 10.0,
+      "effective_ar": 10.619048118591309,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 2.390531063079834,
+      "reading_strain": 0.30316466093063354,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.400000095367432,
+      "speed_strain": 0.42940759658813477,
+      "stars": 0.8974307179450989
+    },
+    "map": "nan-slider",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": 1.26,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 37.70631408691406,
+        "pp_acc": 30.378870010375977,
+        "pp_aim": 0.00008069378236541525,
+        "pp_reading": 0.023725325241684914,
+        "pp_speed": 0.1703338921070099
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.3552226722240448,
+        "pp_acc": 0.030481891706585884,
+        "pp_aim": 0.00003587552782846615,
+        "pp_reading": 0.007262890692800283,
+        "pp_speed": 0.08071093261241913
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.399997234344482,
+      "aim_strain": 0.08322383463382721,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 2.400045871734619,
+      "reading_strain": 0.08126087486743927,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399999141693115,
+      "speed_strain": 0.45112988352775574,
+      "stars": 0.738577127456665
+    },
+    "map": "nan-slider",
+    "mods": [
+      "SO"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 37.72038269042969,
+        "pp_acc": 30.378870010375977,
+        "pp_aim": 0.000057597975683165714,
+        "pp_reading": 0.0000310722243739292,
+        "pp_speed": 0.2017521858215332
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.3777477741241455,
+        "pp_acc": 0.030481891706585884,
+        "pp_aim": 0.000025607398129068315,
+        "pp_reading": 9.520947060082108e-6,
+        "pp_speed": 0.09559816122055054
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.399997234344482,
+      "aim_strain": 0.08322383463382721,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 2.400045871734619,
+      "reading_strain": 0.08126087486743927,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399999141693115,
+      "speed_strain": 0.45112988352775574,
+      "stars": 0.738577127456665
+    },
+    "map": "nan-slider",
+    "mods": [
+      "TD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 37.720638275146484,
+        "pp_acc": 30.378870010375977,
+        "pp_aim": 0.00131172314286232,
+        "pp_reading": 0.0000310722243739292,
+        "pp_speed": 0.2017521858215332
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.37790578603744507,
+        "pp_acc": 0.030481891706585884,
+        "pp_aim": 0.0005831770831719041,
+        "pp_reading": 9.520947060082108e-6,
+        "pp_speed": 0.09559816122055054
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 4.400000095367432,
+      "aim_strain": 0.08174322545528412,
+      "ar": 10.0,
+      "effective_ar": 11.0,
+      "max_combo": 6,
+      "n_circles": 4,
+      "n_sliders": 1,
+      "n_spinners": 0,
+      "od": 10.0,
+      "reading_difficult_note_count": 2.4016733169555664,
+      "reading_strain": 0.5557000041007996,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 4.399932384490967,
+      "speed_strain": 0.6066537499427795,
+      "stars": 1.3400744199752808
+    },
+    "map": "nan-slider",
+    "mods": [
+      "HD",
+      "HR",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 6,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 5,
+        "n50": 0,
+        "pp": 45.18060302734375,
+        "pp_acc": 35.93313980102539,
+        "pp_aim": 0.000049431517254561186,
+        "pp_reading": 0.19368016719818115,
+        "pp_speed": 0.5505302548408508
+      },
+      {
+        "combo": 3,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 4,
+        "n50": 0,
+        "pp": 0.6584215760231018,
+        "pp_acc": 0.03605499863624573,
+        "pp_aim": 0.000021976684365654364,
+        "pp_reading": 0.059355732053518295,
+        "pp_speed": 0.2727683186531067
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 0.0,
+      "aim_difficult_strain_count": 1.100000023841858,
+      "aim_strain": 0.06750000268220901,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 2,
+      "n_circles": 2,
+      "n_sliders": 0,
+      "n_spinners": 0,
+      "od": 9.600000381469727,
+      "reading_difficult_note_count": 0.0,
+      "reading_strain": 0.0,
+      "slider_factor": 1.0,
+      "speed_difficult_strain_count": 1.100000023841858,
+      "speed_strain": 0.2156733274459839,
+      "stars": 0.3438144326210022
+    },
+    "map": "nan-slider",
+    "mods": [],
+    "passed_objects": 2,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 0,
+        "n300": 2,
+        "n50": 0,
+        "pp": 30.258020401000977,
+        "pp_acc": 24.675310134887695,
+        "pp_aim": 5.671673534379806e-6,
+        "pp_reading": 3.7735849218734074e-6,
+        "pp_speed": 0.01341930590569973
+      },
+      {
+        "combo": 1,
+        "effective_miss_count": 1.0,
+        "misses": 1,
+        "n100": 0,
+        "n300": 1,
+        "n50": 0,
+        "pp": 0.07105792313814163,
+        "pp_acc": 1.4707630953125772e-6,
+        "pp_aim": 3.53772236394434e-7,
+        "pp_reading": 2.2641509644927282e-7,
+        "pp_speed": 0.0007192373159341514
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 57.64127731323242,
+      "aim_difficult_strain_count": 96.886474609375,
+      "aim_strain": 3.06805157661438,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 141.48480224609375,
+      "reading_strain": 1.246889352798462,
+      "slider_factor": 0.9972422122955322,
+      "speed_difficult_strain_count": 92.17057800292969,
+      "speed_strain": 2.8626186847686768,
+      "stars": 7.515325546264648
+    },
+    "map": "801165",
+    "mods": [],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 156.50608825683594,
+        "pp_acc": 13.598017692565918,
+        "pp_aim": 86.62914276123047,
+        "pp_reading": 2.1987805366516113,
+        "pp_speed": 70.5395278930664
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 47.805049896240234,
+        "pp_acc": 5.539603233337402,
+        "pp_aim": 26.782085418701172,
+        "pp_reading": 0.6987784504890442,
+        "pp_speed": 21.54746437072754
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 57.64127731323242,
+      "aim_difficult_strain_count": 96.886474609375,
+      "aim_strain": 3.06805157661438,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 472.4287109375,
+      "reading_strain": 2.4931912422180176,
+      "slider_factor": 0.9972422122955322,
+      "speed_difficult_strain_count": 92.17057800292969,
+      "speed_strain": 2.8626186847686768,
+      "stars": 8.553910255432129
+    },
+    "map": "801165",
+    "mods": [
+      "HD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 170.21336364746094,
+        "pp_acc": 13.598017692565918,
+        "pp_aim": 86.62914276123047,
+        "pp_reading": 18.798309326171875,
+        "pp_speed": 70.5395278930664
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 52.89310836791992,
+        "pp_acc": 5.539603233337402,
+        "pp_aim": 26.782085418701172,
+        "pp_reading": 6.777618885040283,
+        "pp_speed": 21.54746437072754
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 59.513023376464844,
+      "aim_difficult_strain_count": 91.42562103271484,
+      "aim_strain": 3.4337069988250732,
+      "ar": 10.0,
+      "effective_ar": 10.0,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 10.0,
+      "reading_difficult_note_count": 166.83294677734375,
+      "reading_strain": 0.9189845323562622,
+      "slider_factor": 0.996727466583252,
+      "speed_difficult_strain_count": 106.01669311523438,
+      "speed_strain": 2.8761003017425537,
+      "stars": 7.740846633911133
+    },
+    "map": "801165",
+    "mods": [
+      "HR"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 303.82281494140625,
+        "pp_acc": 31.48427963256836,
+        "pp_aim": 157.08815002441406,
+        "pp_reading": 0.838313102722168,
+        "pp_speed": 78.17681121826172
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 93.91567993164062,
+        "pp_acc": 12.826165199279785,
+        "pp_aim": 49.37315368652344,
+        "pp_reading": 0.27168792486190796,
+        "pp_speed": 24.847991943359375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 64.12419891357422,
+      "aim_difficult_strain_count": 145.95358276367188,
+      "aim_strain": 3.9669876098632812,
+      "ar": 9.300000190734863,
+      "effective_ar": 10.533332824707031,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 300.4098205566406,
+      "reading_strain": 3.1049747467041016,
+      "slider_factor": 0.9965749382972717,
+      "speed_difficult_strain_count": 116.53366088867188,
+      "speed_strain": 4.042367935180664,
+      "stars": 11.283125877380371
+    },
+    "map": "801165",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 368.2774658203125,
+        "pp_acc": 13.598017692565918,
+        "pp_aim": 189.55593872070312,
+        "pp_reading": 36.787227630615234,
+        "pp_speed": 202.07130432128906
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 116.02398681640625,
+        "pp_acc": 5.539603233337402,
+        "pp_aim": 61.6602783203125,
+        "pp_reading": 12.704038619995117,
+        "pp_speed": 63.674415588378906
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 56.6324577331543,
+      "aim_difficult_strain_count": 93.45294952392578,
+      "aim_strain": 2.39904522895813,
+      "ar": 9.300000190734863,
+      "effective_ar": 8.066667556762695,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 146.00393676757812,
+      "reading_strain": 0.7928065061569214,
+      "slider_factor": 0.9981541037559509,
+      "speed_difficult_strain_count": 76.3670883178711,
+      "speed_strain": 1.9867584705352783,
+      "stars": 5.515031337738037
+    },
+    "map": "801165",
+    "mods": [
+      "HT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 97.96237182617188,
+        "pp_acc": 13.598017692565918,
+        "pp_aim": 51.73505783081055,
+        "pp_reading": 0.5223642587661743,
+        "pp_speed": 22.97389793395996
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 30.85358238220215,
+        "pp_acc": 5.539603233337402,
+        "pp_aim": 16.35870361328125,
+        "pp_reading": 0.1666414439678192,
+        "pp_speed": 6.8342132568359375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 19.477529525756836,
+      "aim_difficult_strain_count": 107.02218627929688,
+      "aim_strain": 2.5875658988952637,
+      "ar": 4.650000095367432,
+      "effective_ar": 4.650000095367432,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 4.0,
+      "reading_difficult_note_count": 274.1402893066406,
+      "reading_strain": 3.3079404830932617,
+      "slider_factor": 0.9995009899139404,
+      "speed_difficult_strain_count": 107.08343505859375,
+      "speed_strain": 2.6454713344573975,
+      "stars": 8.771451950073242
+    },
+    "map": "801165",
+    "mods": [
+      "EZ"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 144.96588134765625,
+        "pp_acc": 2.5365257263183594,
+        "pp_aim": 62.95671844482422,
+        "pp_reading": 44.62827682495117,
+        "pp_speed": 51.91236877441406
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 46.05507278442383,
+        "pp_acc": 1.033337950706482,
+        "pp_aim": 19.818626403808594,
+        "pp_reading": 15.269464492797852,
+        "pp_speed": 16.17961311340332
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 19.95294952392578,
+      "aim_difficult_strain_count": 142.7027130126953,
+      "aim_strain": 3.4889397621154785,
+      "ar": 4.650000095367432,
+      "effective_ar": 7.480000019073486,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 4.0,
+      "reading_difficult_note_count": 303.1145935058594,
+      "reading_strain": 4.31825065612793,
+      "slider_factor": 0.9994652271270752,
+      "speed_difficult_strain_count": 139.1503448486328,
+      "speed_strain": 3.735804557800293,
+      "stars": 11.778287887573242
+    },
+    "map": "801165",
+    "mods": [
+      "EZ",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 333.0592956542969,
+        "pp_acc": 2.5365257263183594,
+        "pp_aim": 141.23117065429688,
+        "pp_reading": 100.44065856933594,
+        "pp_speed": 148.9335479736328
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 107.44397735595703,
+        "pp_acc": 1.033337950706482,
+        "pp_aim": 46.09901809692383,
+        "pp_reading": 34.71717834472656,
+        "pp_speed": 47.98284912109375
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 57.64127731323242,
+      "aim_difficult_strain_count": 96.886474609375,
+      "aim_strain": 3.06805157661438,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 141.48480224609375,
+      "reading_strain": 1.246889352798462,
+      "slider_factor": 0.9972422122955322,
+      "speed_difficult_strain_count": 92.17057800292969,
+      "speed_strain": 2.8626186847686768,
+      "stars": 7.515325546264648
+    },
+    "map": "801165",
+    "mods": [
+      "FL"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 340.1764831542969,
+        "pp_acc": 13.869977951049805,
+        "pp_aim": 194.48240661621094,
+        "pp_reading": 2.1987805366516113,
+        "pp_speed": 70.5395278930664
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 99.4327392578125,
+        "pp_acc": 5.650395393371582,
+        "pp_aim": 60.12577819824219,
+        "pp_reading": 0.6987784504890442,
+        "pp_speed": 21.54746437072754
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 61.491943359375,
+      "aim_difficult_strain_count": 122.61775207519531,
+      "aim_strain": 3.535309314727783,
+      "ar": 9.300000190734863,
+      "effective_ar": 10.063491821289062,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 192.62005615234375,
+      "reading_strain": 1.8471943140029907,
+      "slider_factor": 0.9968287348747253,
+      "speed_difficult_strain_count": 102.3841781616211,
+      "speed_strain": 3.1593947410583496,
+      "stars": 8.885903358459473
+    },
+    "map": "801165",
+    "mods": [
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": 1.26,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 315.4125061035156,
+        "pp_acc": 13.598017692565918,
+        "pp_aim": 169.26187133789062,
+        "pp_reading": 7.469015121459961,
+        "pp_speed": 95.35816192626953
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 98.98625183105469,
+        "pp_acc": 5.539603233337402,
+        "pp_aim": 55.308815002441406,
+        "pp_reading": 2.4606544971466064,
+        "pp_speed": 29.544795989990234
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 57.64127731323242,
+      "aim_difficult_strain_count": 96.886474609375,
+      "aim_strain": 3.06805157661438,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 141.48480224609375,
+      "reading_strain": 1.246889352798462,
+      "slider_factor": 0.9972422122955322,
+      "speed_difficult_strain_count": 92.17057800292969,
+      "speed_strain": 2.8626186847686768,
+      "stars": 7.515325546264648
+    },
+    "map": "801165",
+    "mods": [
+      "SO"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 156.50608825683594,
+        "pp_acc": 13.598017692565918,
+        "pp_aim": 86.62914276123047,
+        "pp_reading": 2.1987805366516113,
+        "pp_speed": 70.5395278930664
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 47.805049896240234,
+        "pp_acc": 5.539603233337402,
+        "pp_aim": 26.782085418701172,
+        "pp_reading": 0.6987784504890442,
+        "pp_speed": 21.54746437072754
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 57.64127731323242,
+      "aim_difficult_strain_count": 96.886474609375,
+      "aim_strain": 3.06805157661438,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 141.48480224609375,
+      "reading_strain": 1.246889352798462,
+      "slider_factor": 0.9972422122955322,
+      "speed_difficult_strain_count": 92.17057800292969,
+      "speed_strain": 2.8626186847686768,
+      "stars": 7.515325546264648
+    },
+    "map": "801165",
+    "mods": [
+      "TD"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 88.41261291503906,
+        "pp_acc": 13.598017692565918,
+        "pp_aim": 43.618080139160156,
+        "pp_reading": 2.1987805366516113,
+        "pp_speed": 70.5395278930664
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 28.778352737426758,
+        "pp_acc": 5.539603233337402,
+        "pp_aim": 13.484512329101562,
+        "pp_reading": 0.6987784504890442,
+        "pp_speed": 21.54746437072754
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 69.31885528564453,
+      "aim_difficult_strain_count": 141.4938507080078,
+      "aim_strain": 4.385037899017334,
+      "ar": 10.0,
+      "effective_ar": 11.0,
+      "max_combo": 2359,
+      "n_circles": 938,
+      "n_sliders": 674,
+      "n_spinners": 0,
+      "od": 10.0,
+      "reading_difficult_note_count": 436.54095458984375,
+      "reading_strain": 5.082644939422607,
+      "slider_factor": 0.9955765008926392,
+      "speed_difficult_strain_count": 132.22984313964844,
+      "speed_strain": 4.067965507507324,
+      "stars": 13.821029663085938
+    },
+    "map": "801165",
+    "mods": [
+      "HD",
+      "HR",
+      "DT"
+    ],
+    "passed_objects": null,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 2359,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 80,
+        "n300": 1516,
+        "n50": 16,
+        "pp": 629.005859375,
+        "pp_acc": 31.48427963256836,
+        "pp_aim": 260.713134765625,
+        "pp_reading": 164.7153778076172,
+        "pp_speed": 225.03294372558594
+      },
+      {
+        "combo": 1179,
+        "effective_miss_count": 32.0,
+        "misses": 32,
+        "n100": 80,
+        "n300": 1484,
+        "n50": 16,
+        "pp": 202.93751525878906,
+        "pp_acc": 12.826165199279785,
+        "pp_aim": 84.31021118164062,
+        "pp_reading": 58.96114730834961,
+        "pp_speed": 73.57064056396484
+      }
+    ]
+  },
+  {
+    "difficulty": {
+      "aim_difficult_slider_count": 32.15275955200195,
+      "aim_difficult_strain_count": 69.09812927246094,
+      "aim_strain": 2.9731638431549072,
+      "ar": 9.300000190734863,
+      "effective_ar": 9.300000190734863,
+      "max_combo": 1206,
+      "n_circles": 441,
+      "n_sliders": 365,
+      "n_spinners": 0,
+      "od": 8.0,
+      "reading_difficult_note_count": 74.42839050292969,
+      "reading_strain": 1.155383825302124,
+      "slider_factor": 0.9962496757507324,
+      "speed_difficult_strain_count": 54.77876281738281,
+      "speed_strain": 2.7803537845611572,
+      "stars": 7.243999481201172
+    },
+    "map": "801165",
+    "mods": [],
+    "passed_objects": 806,
+    "rate": null,
+    "scores": [
+      {
+        "combo": 1206,
+        "effective_miss_count": 0.0,
+        "misses": 0,
+        "n100": 40,
+        "n300": 758,
+        "n50": 8,
+        "pp": 117.40739440917969,
+        "pp_acc": 9.64693546295166,
+        "pp_aim": 65.53196716308594,
+        "pp_reading": 1.730602741241455,
+        "pp_speed": 61.61145782470703
+      },
+      {
+        "combo": 603,
+        "effective_miss_count": 16.0,
+        "misses": 16,
+        "n100": 40,
+        "n300": 742,
+        "n50": 8,
+        "pp": 50.120452880859375,
+        "pp_acc": 3.6903140544891357,
+        "pp_aim": 29.045087814331055,
+        "pp_reading": 0.7590069770812988,
+        "pp_speed": 26.491485595703125
+      }
+    ]
+  }
+]
