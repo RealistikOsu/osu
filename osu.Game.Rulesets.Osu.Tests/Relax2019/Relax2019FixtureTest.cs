@@ -11,6 +11,8 @@ using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Osu.Difficulty;
 using osu.Game.Rulesets.Osu.Difficulty.Relax2019;
 using osu.Game.Rulesets.Osu.Mods;
+using osu.Game.Rulesets.Scoring;
+using osu.Game.Scoring;
 using osu.Game.Tests.Beatmaps;
 
 namespace osu.Game.Rulesets.Osu.Tests.Relax2019
@@ -67,6 +69,39 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
             assertClose(expected.ReadingStrain, attributes.ReadingDifficulty, "reading");
             assertClose(expected.ReadingDifficultNoteCount, attributes.ReadingDifficultNoteCount, "reading difficult notes");
             assertClose(expected.Stars, attributes.StarRating, "stars");
+        }
+
+        [TestCaseSource(nameof(Fixtures))]
+        public void TestPerformance(Fixture fixture)
+        {
+            var (beatmap, attributes) = calculate(fixture);
+            var ruleset = new OsuRuleset();
+
+            foreach (var expected in fixture.Scores)
+            {
+                // Classic: the Rust calc only knows the combo-based dropped slider estimate.
+                var score = new ScoreInfo(beatmap.Beatmap.BeatmapInfo, ruleset.RulesetInfo)
+                {
+                    Mods = DifficultyMods(fixture).Append(new OsuModClassic()).ToArray(),
+                    MaxCombo = expected.Combo,
+                    Statistics = new Dictionary<HitResult, int>
+                    {
+                        [HitResult.Great] = expected.Count300,
+                        [HitResult.Ok] = expected.Count100,
+                        [HitResult.Meh] = expected.Count50,
+                        [HitResult.Miss] = expected.Misses,
+                    },
+                };
+
+                var performance = (OsuPerformanceAttributes)new OsuPerformanceCalculator().Calculate(score, attributes);
+
+                assertClose(expected.Total, performance.Total, "pp");
+                assertClose(expected.Aim, performance.Aim, "aim pp");
+                assertClose(expected.Speed, performance.Speed, "speed pp");
+                assertClose(expected.Accuracy, performance.Accuracy, "acc pp");
+                assertClose(expected.Reading, performance.Reading, "reading pp");
+                assertClose(expected.EffectiveMissCount, performance.EffectiveMissCount, "effective misses");
+            }
         }
 
         private (IWorkingBeatmap beatmap, OsuRelax2019DifficultyAttributes attributes) calculate(Fixture fixture)
