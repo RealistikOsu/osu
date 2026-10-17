@@ -10,6 +10,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
 {
     /// <summary>
     /// 2019 relax pp. Unjudged objects count as 300s, as in the Rust calc; non-finite values (which the Rust calc can produce on degenerate input) become 0.
+    /// For non-classic scores, sliders without a SliderTailHit count as dropped, so failed plays should be scored against attributes of the passed objects.
     /// </summary>
     public class Relax2019PerformanceCalculation
     {

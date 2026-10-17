@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using osu.Game.Beatmaps;
+using osu.Game.Online.API.Requests.Responses;
 using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.Mods;
 using osu.Game.Rulesets.Osu.Difficulty;
@@ -76,6 +79,25 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
                 extra: new Dictionary<HitResult, int> { [HitResult.SliderTailHit] = 0, [HitResult.LargeTickMiss] = 50 });
 
             Assert.That(b.Total, Is.EqualTo(a.Total));
+        }
+
+        [Test]
+        public void TestRelaxScoreWithPlainAttributesThrows()
+        {
+            var values = attributes.ToDatabaseAttributes().ToDictionary(a => a.attributeId, a => Convert.ToDouble(a.value));
+            var onlineInfo = new APIBeatmap { CircleCount = attributes.HitCircleCount, SliderCount = attributes.SliderCount, SpinnerCount = attributes.SpinnerCount };
+
+            var plain = new OsuDifficultyAttributes();
+            plain.FromDatabaseAttributes(values, onlineInfo);
+
+            var score = new ScoreInfo(beatmap.Beatmap.BeatmapInfo, new OsuRuleset().RulesetInfo)
+            {
+                Mods = new Mod[] { new OsuModRelax() },
+                MaxCombo = 1,
+                Statistics = new Dictionary<HitResult, int> { [HitResult.Great] = 1 },
+            };
+
+            Assert.Throws<InvalidOperationException>(() => new OsuPerformanceCalculator().Calculate(score, plain));
         }
 
         [TestCase(0, 0, 0, 0, 0)]

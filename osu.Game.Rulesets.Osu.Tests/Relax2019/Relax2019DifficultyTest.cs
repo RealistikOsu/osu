@@ -83,6 +83,19 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
             Assert.That(calc.CalculateTimed(mods).Last().Attributes, Is.EqualTo(expected).UsingPropertiesComparer());
         }
 
+        [TestCase("diffcalc-test")]
+        [TestCase("801165")]
+        public void TestClassicDoesNotChangeRelaxDifficulty(string name)
+        {
+            var calc = CreateDifficultyCalculator(GetBeatmap(name));
+            var relax = calc.Calculate(new Mod[] { new OsuModRelax() });
+            var classic = calc.Calculate(new Mod[] { new OsuModRelax(), new OsuModClassic() });
+
+            relax.Mods = classic.Mods;
+
+            Assert.That(classic, Is.EqualTo(relax).UsingPropertiesComparer());
+        }
+
         [Test]
         public void TestDatabaseRoundTrip()
         {

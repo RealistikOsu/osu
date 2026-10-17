@@ -7,6 +7,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
     /// <summary>
     /// Relax difficulty from the 2019 calc. <see cref="OsuPerformanceCalculator"/> computes 2019 pp for these.
     /// Aim, speed and reading difficulty hold the 2019 strains.
+    /// Inherited modern-only fields (speed note count, top-weighted slider factors, legacy score fields) are not populated.
     /// </summary>
     public class OsuRelax2019DifficultyAttributes : OsuDifficultyAttributes
     {

@@ -78,6 +78,9 @@ namespace osu.Game.Rulesets.Osu.Difficulty
             if (attributes is OsuRelax2019DifficultyAttributes relaxAttributes)
                 return new Relax2019PerformanceCalculation(score, relaxAttributes).Calculate();
 
+            if (score.Mods.Any(m => m is OsuModRelax))
+                throw new InvalidOperationException($"Relax scores require {nameof(OsuRelax2019DifficultyAttributes)}, e.g. attributes calculated or reloaded with {nameof(OsuModRelax)}.");
+
             var osuAttributes = (OsuDifficultyAttributes)attributes;
 
             usingClassicSliderAccuracy = score.Mods.OfType<OsuModClassic>().Any(m => m.NoSliderHeadAccuracy.Value);
