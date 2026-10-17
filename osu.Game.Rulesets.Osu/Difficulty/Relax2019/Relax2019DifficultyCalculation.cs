@@ -64,12 +64,12 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
             new Relax2019Aim(mods, true),
             new Relax2019Aim(mods, false),
             new Relax2019Speed(mods),
+            new Relax2019Reading(mods, Relax2019ReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden))),
         };
 
         public static OsuRelax2019DifficultyAttributes CreateDifficultyAttributes(IBeatmap beatmap, Mod[] mods, Skill[] skills)
         {
-            double clockRate = ModUtils.CalculateRateWithMods(mods);
-            double preempt = IBeatmapDifficultyInfo.DifficultyRange(beatmap.Difficulty.ApproachRate, 1800, 1200, 450) / clockRate;
+            var parameters = Relax2019ReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden));
 
             var attributes = new OsuRelax2019DifficultyAttributes
             {
@@ -80,7 +80,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
                 SpinnerCount = beatmap.HitObjects.Count(h => h is Spinner),
                 OverallDifficulty = beatmap.Difficulty.OverallDifficulty,
                 ApproachRate = beatmap.Difficulty.ApproachRate,
-                EffectiveApproachRate = preemptToApproachRate((float)preempt),
+                EffectiveApproachRate = preemptToApproachRate(parameters.Preempt),
                 SliderFactor = 1,
             };
 
@@ -101,6 +101,17 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
             attributes.AimDifficultSliderCount = aim.DifficultSliderCount();
             attributes.AimDifficultStrainCount = aim.CountDifficultStrains();
             attributes.SpeedDifficultStrainCount = speed.CountDifficultStrains();
+
+            var reading = skills.OfType<Relax2019Reading>().Single();
+            var (readingDifficulty, readingDifficultNoteCount) = reading.Evaluate();
+            float readingStrain = MathF.Sqrt(readingDifficulty) * difficulty_multiplier;
+
+            float sum = aimStrain + speedStrain + readingStrain;
+            float maxComponent = MathF.Max(MathF.Max(MathF.Max(0, aimStrain), speedStrain), readingStrain);
+
+            attributes.ReadingDifficulty = readingStrain;
+            attributes.ReadingDifficultNoteCount = readingDifficultNoteCount;
+            attributes.StarRating = sum + MathF.Abs(maxComponent - sum / 3) / 2;
 
             return attributes;
         }

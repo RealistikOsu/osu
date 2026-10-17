@@ -58,6 +58,17 @@ namespace osu.Game.Rulesets.Osu.Tests.Relax2019
             Assert.That(attributes.SpinnerCount, Is.EqualTo(expected.Spinners), "spinners");
         }
 
+        [TestCaseSource(nameof(Fixtures))]
+        public void TestReadingAndStarRating(Fixture fixture)
+        {
+            var (_, attributes) = calculate(fixture);
+            var expected = fixture.Difficulty;
+
+            assertClose(expected.ReadingStrain, attributes.ReadingDifficulty, "reading");
+            assertClose(expected.ReadingDifficultNoteCount, attributes.ReadingDifficultNoteCount, "reading difficult notes");
+            assertClose(expected.Stars, attributes.StarRating, "stars");
+        }
+
         private (IWorkingBeatmap beatmap, OsuRelax2019DifficultyAttributes attributes) calculate(Fixture fixture)
         {
             var beatmap = GetBeatmap(fixture.Map);
