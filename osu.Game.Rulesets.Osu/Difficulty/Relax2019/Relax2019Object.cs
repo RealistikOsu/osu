@@ -1,5 +1,6 @@
 using System;
 using osu.Game.Rulesets.Osu.Objects;
+using osu.Game.Rulesets.Osu.UI;
 using osuTK;
 
 namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
@@ -22,7 +23,11 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
 
         public bool IsSpinner => TravelDistance == null;
 
-        public Relax2019Object(OsuHitObject hitObject, float radius, float scalingFactor)
+        /// <param name="hitObject">The hit object.</param>
+        /// <param name="radius">Circle radius from CS.</param>
+        /// <param name="scalingFactor">Scale to normalised distances.</param>
+        /// <param name="undoVerticalReflection">Undo hard rock's reflection. The 2019 calc uses the unreflected positions, which matters for the sign of degenerate (stacked) angles.</param>
+        public Relax2019Object(OsuHitObject hitObject, float radius, float scalingFactor, bool undoVerticalReflection = false)
         {
             Time = (float)hitObject.StartTime;
             Position = hitObject.Position;
@@ -42,6 +47,12 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax2019
                 default:
                     TravelDistance = 0;
                     break;
+            }
+
+            if (undoVerticalReflection)
+            {
+                Position.Y = OsuPlayfield.BASE_SIZE.Y - Position.Y;
+                EndPosition.Y = OsuPlayfield.BASE_SIZE.Y - EndPosition.Y;
             }
         }
 
