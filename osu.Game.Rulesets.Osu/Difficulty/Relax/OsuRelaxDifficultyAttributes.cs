@@ -12,19 +12,19 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax
     public class OsuRelaxDifficultyAttributes : OsuDifficultyAttributes
     {
         /// <summary>
-        /// Overall difficulty after mods, not adjusted for clock rate.
+        /// Overall difficulty the play is rated at (see <see cref="RelaxDifficultySettings"/>), not adjusted for clock rate.
         /// </summary>
         [JsonProperty("overall_difficulty")]
         public double OverallDifficulty { get; set; }
 
         /// <summary>
-        /// Approach rate after mods, not adjusted for clock rate.
+        /// Approach rate the play is rated at (see <see cref="RelaxDifficultySettings"/>), not adjusted for clock rate.
         /// </summary>
         [JsonProperty("approach_rate")]
         public double ApproachRate { get; set; }
 
         /// <summary>
-        /// Approach rate after mods and clock rate.
+        /// Approach rate the play is rated at, adjusted for clock rate.
         /// </summary>
         [JsonProperty("effective_approach_rate")]
         public double EffectiveApproachRate { get; set; }
