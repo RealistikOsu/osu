@@ -29,15 +29,9 @@ namespace osu.Game.Rulesets.Osu.Difficulty
         {
         }
 
-        /// <summary>
-        /// The 2019 relax formulas rate stable plays, which the Classic mod stands for. A lazer relax play goes through
-        /// the same calculation as every other lazer play.
-        /// </summary>
-        public static bool UsesRelaxCalculation(Mod[] mods) => mods.Any(m => m is OsuModRelax) && mods.Any(m => m is OsuModClassic);
-
         protected override DifficultyAttributes CreateDifficultyAttributes(IBeatmap beatmap, Mod[] mods, Skill[] skills)
         {
-            if (UsesRelaxCalculation(mods))
+            if (mods.Any(m => m is OsuModRelax))
                 return RelaxDifficultyCalculation.CreateDifficultyAttributes(beatmap, mods, skills);
 
             var aim = skills.OfType<Aim>().Single(a => a.IncludeSliders);
@@ -179,7 +173,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty
 
         protected override IEnumerable<DifficultyHitObject> CreateDifficultyHitObjects(IBeatmap beatmap, Mod[] mods)
         {
-            if (UsesRelaxCalculation(mods))
+            if (mods.Any(m => m is OsuModRelax))
                 return RelaxDifficultyCalculation.CreateDifficultyHitObjects(beatmap, mods);
 
             List<DifficultyHitObject> objects = new List<DifficultyHitObject>(beatmap.HitObjects.Count);
@@ -198,7 +192,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty
 
         protected override Skill[] CreateSkills(IBeatmap beatmap, Mod[] mods)
         {
-            if (UsesRelaxCalculation(mods))
+            if (mods.Any(m => m is OsuModRelax))
                 return RelaxDifficultyCalculation.CreateSkills(beatmap, mods);
 
             var skills = new List<Skill>
