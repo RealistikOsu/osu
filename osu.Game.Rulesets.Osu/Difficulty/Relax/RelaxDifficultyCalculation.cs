@@ -43,7 +43,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax
                 return objects;
 
             double clockRate = ModUtils.CalculateRateWithMods(mods);
-            var (radius, scalingFactor) = Geometry(beatmap.Difficulty.CircleSize);
+            var (radius, scalingFactor) = Geometry(RelaxDifficultySettings.Create(beatmap, mods).CircleSize);
 
             bool hardRock = mods.Any(m => m is OsuModHardRock);
 
@@ -59,17 +59,29 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax
             return objects;
         }
 
-        public static Skill[] CreateSkills(IBeatmap beatmap, Mod[] mods) => new Skill[]
+        public static Skill[] CreateSkills(IBeatmap beatmap, Mod[] mods)
         {
-            new RelaxAim(mods, true),
-            new RelaxAim(mods, false),
-            new RelaxSpeed(mods),
-            new RelaxReading(mods, RelaxReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden))),
-        };
+            var settings = RelaxDifficultySettings.Create(beatmap, mods);
+
+            var skills = new List<Skill>
+            {
+                new RelaxAim(mods, true),
+                new RelaxAim(mods, false),
+                new RelaxSpeed(mods),
+                new RelaxReading(mods, readingParameters(settings.ApproachRate, mods)),
+            };
+
+            // A custom approach rate is rated at whichever of the allowed and played approach rates gives less reading difficulty.
+            if (settings.PlayedApproachRate != settings.ApproachRate)
+                skills.Add(new RelaxReading(mods, readingParameters(settings.PlayedApproachRate, mods)));
+
+            return skills.ToArray();
+        }
 
         public static OsuRelaxDifficultyAttributes CreateDifficultyAttributes(IBeatmap beatmap, Mod[] mods, Skill[] skills)
         {
-            var parameters = RelaxReadingParameters.Create(beatmap.Difficulty.ApproachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden));
+            var settings = RelaxDifficultySettings.Create(beatmap, mods);
+            var parameters = readingParameters(settings.ApproachRate, mods);
 
             var attributes = new OsuRelaxDifficultyAttributes
             {
@@ -78,8 +90,8 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax
                 HitCircleCount = beatmap.HitObjects.Count(h => h is HitCircle),
                 SliderCount = beatmap.HitObjects.Count(h => h is Slider),
                 SpinnerCount = beatmap.HitObjects.Count(h => h is Spinner),
-                OverallDifficulty = beatmap.Difficulty.OverallDifficulty,
-                ApproachRate = beatmap.Difficulty.ApproachRate,
+                OverallDifficulty = settings.OverallDifficulty,
+                ApproachRate = settings.ApproachRate,
                 EffectiveApproachRate = preemptToApproachRate(parameters.Preempt),
                 SliderFactor = 1,
             };
@@ -95,16 +107,37 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax
             float aimNoSlidersStrain = MathF.Sqrt(aimNoSliders.Difficulty()) * difficulty_multiplier;
             float speedStrain = MathF.Sqrt(speed.Difficulty()) * difficulty_multiplier;
 
+            var readings = skills.OfType<RelaxReading>().ToArray();
+            var (readingDifficulty, readingDifficultNoteCount) = readings[0].Evaluate();
+
+            if (readings.Length > 1)
+            {
+                var played = readings[1].Evaluate();
+
+                if (played.Difficulty < readingDifficulty)
+                {
+                    (readingDifficulty, readingDifficultNoteCount) = played;
+                    attributes.ApproachRate = settings.PlayedApproachRate;
+                    attributes.EffectiveApproachRate = preemptToApproachRate(readings[1].Parameters.Preempt);
+                }
+            }
+
+            float readingStrain = MathF.Sqrt(readingDifficulty) * difficulty_multiplier;
+
+            if (settings.BigCirclePenalty < 1)
+            {
+                aimStrain *= settings.BigCirclePenalty;
+                aimNoSlidersStrain *= settings.BigCirclePenalty;
+                speedStrain *= settings.BigCirclePenalty;
+                readingStrain *= settings.BigCirclePenalty;
+            }
+
             attributes.AimDifficulty = aimStrain;
             attributes.SpeedDifficulty = speedStrain;
             attributes.SliderFactor = aimStrain > 0 ? MathF.Min(aimNoSlidersStrain / aimStrain, 1) : 1;
             attributes.AimDifficultSliderCount = aim.DifficultSliderCount();
             attributes.AimDifficultStrainCount = aim.CountDifficultStrains();
             attributes.SpeedDifficultStrainCount = speed.CountDifficultStrains();
-
-            var reading = skills.OfType<RelaxReading>().Single();
-            var (readingDifficulty, readingDifficultNoteCount) = reading.Evaluate();
-            float readingStrain = MathF.Sqrt(readingDifficulty) * difficulty_multiplier;
 
             float sum = aimStrain + speedStrain + readingStrain;
             float maxComponent = MathF.Max(MathF.Max(MathF.Max(0, aimStrain), speedStrain), readingStrain);
@@ -115,6 +148,9 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Relax
 
             return attributes;
         }
+
+        private static RelaxReadingParameters readingParameters(float approachRate, Mod[] mods)
+            => RelaxReadingParameters.Create(approachRate, ModUtils.CalculateRateWithMods(mods), mods.Any(m => m is OsuModHidden));
 
         private static float preemptToApproachRate(float preempt)
         {
