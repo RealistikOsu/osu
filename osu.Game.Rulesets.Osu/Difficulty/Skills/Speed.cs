@@ -59,9 +59,6 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Skills
         {
             double difficulty = SpeedEvaluator.EvaluateDifficultyOf(current);
 
-            if (Mods.Any(m => m is OsuModAutopilot))
-                difficulty *= 0.5;
-
             return difficulty;
         }
 

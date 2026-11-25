@@ -67,9 +67,6 @@ namespace osu.Game.Rulesets.Osu.Difficulty.Skills
             if (Mods.Any(m => m is OsuModRelax))
                 difficulty *= 0.7;
 
-            if (Mods.Any(m => m is OsuModAutopilot))
-                difficulty *= 0.4;
-
             difficulty *= 0.985 + DiffUtils.Pow(Math.Max(0, ((OsuDifficultyHitObject)current).OverallDifficulty), 2) / 4000;
 
             return difficulty;

@@ -86,10 +86,21 @@ namespace osu.Game.Rulesets.Osu.Difficulty
             double speedRating = calculateDifficultyRating(speedDifficultyValue);
             double readingRating = calculateDifficultyRating(readingDifficultyValue);
 
+            bool autopilot = mods.Any(m => m is OsuModAutopilot);
+
+            // Autopilot aims for the player, so what is left to rate is nerfed.
+            if (autopilot)
+                speedRating *= 0.5;
+
             double? flashlightRating = null;
 
             if (flashlight is not null)
+            {
                 flashlightRating = calculateDifficultyRating(flashlight.DifficultyValue());
+
+                if (autopilot)
+                    flashlightRating *= 0.4;
+            }
 
             double sliderNestedScorePerObject = LegacyScoreUtils.CalculateNestedScorePerObject(beatmap, totalHits);
             double legacyScoreBaseMultiplier = LegacyScoreUtils.CalculateDifficultyPeppyStars(WorkingBeatmap.Beatmap);
