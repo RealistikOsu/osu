@@ -78,7 +78,7 @@ namespace osu.Game.Rulesets.Osu.Difficulty
             if (attributes is OsuRelaxDifficultyAttributes relaxAttributes)
                 return new RelaxPerformanceCalculation(score, relaxAttributes).Calculate();
 
-            if (score.Mods.Any(m => m is OsuModRelax))
+            if (OsuDifficultyCalculator.UsesRelaxCalculation(score.Mods))
                 throw new InvalidOperationException($"Relax scores require {nameof(OsuRelaxDifficultyAttributes)}, e.g. attributes calculated or reloaded with {nameof(OsuModRelax)}.");
 
             var osuAttributes = (OsuDifficultyAttributes)attributes;
